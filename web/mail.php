@@ -14,7 +14,7 @@
             echo '<p>Votre message a bien été envoyé.</p>';
         }
 
-        header("Location: index.php#ContactezMoi");
+        header("Location: https://raphael-petrozzi-portefolio.herokuapp.com/#ContactezMoi");
         exit;
     }
     ?>
