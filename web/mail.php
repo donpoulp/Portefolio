@@ -20,8 +20,6 @@
         $retour = mail('raphael.petrozzi@le-campus-numerique.fr', $_POST['sujet'], $message, $entete);
         if($retour)
             echo '<p>Votre message a bien été envoyé.</p>';
-            header('Location: index.html#ContactezMoi');
-            exit;
 
     }
     ?>

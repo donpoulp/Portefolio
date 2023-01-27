@@ -645,6 +645,7 @@
         height: 25px;
         bottom: 40px;
         right: 40px;
+        z-index: 2;
     }
 
     #scroll_to_top img {
