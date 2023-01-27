@@ -1,0 +1,773 @@
+    html body {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+        height: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+    }
+
+    /* HeaderIMG */
+    #headerIMG {
+        margin-top: 0;
+        width: 100%;
+        height: 100vh;
+        background: url('IMG/RaphaelPetrozzi_Portefolio_HeaderIMG.png');
+        background-size: cover;
+    }
+
+    /* HEADER */
+    #header {
+        background: transparent;
+    }
+
+    #nav {
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+
+    #NavApropos {
+        color: white;
+    }
+
+    #NavApropos:hover {
+        color: #ffc551;
+    }
+
+    #NavExperience {
+        color: white;
+    }
+
+    #NavExperience:hover {
+        color: #ffc551;
+    }
+
+    #NavProjet {
+        color: white;
+    }
+
+    #NavProjet:hover {
+        color: #ffc551;
+    }
+
+    #NavContact {
+        color: white;
+    }
+
+    #NavContact:hover {
+        color: #ffc551;
+    }
+
+    #NavAcceuil {
+        color: #ffb727;
+    }
+
+    #NavAcceuil:hover {
+        color: #ffc551;
+    }
+
+    #nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    /* SOUS-HEADER*/
+    #sous-header {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        color: white;
+    }
+
+    #sous-headerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sous-header h1 {
+        margin-bottom: 5px;
+        font-size: 64px;
+        font-weight: 200;
+        font-family: "Satisfy", serif;
+    }
+
+    #sous-header h2 {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    /* MES TITRES */
+    #MesTitles {
+        text-align: center;
+        padding: 30px 0;
+        top: 110px;
+        margin-bottom: 130px;
+        position: relative;
+    }
+
+    #MesTitles h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3b434a;
+        position: relative;
+        z-index: 1;
+    }
+
+    #MesTitles span {
+        position: absolute;
+        top: 55px;
+        color: #eef0f2a6;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        font-weight: 700;
+        font-size: 52px;
+        text-transform: uppercase;
+        line-height: 0;
+        font-family: "Raleway", sans-serif;
+    }
+
+    /* A PROPOS*/
+    #Apropos {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #ImgDeProfil {
+        height: 600px;
+        margin-right: 3%;
+    }
+
+    #AproposDeMoi {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #MainApropos {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #coordoner {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+
+    #EmailTxt {
+        margin-top: 2px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    #coordoner img {
+        margin-top: 0;
+        margin-left: 0;
+        width: 27px;
+    }
+
+    #coordoner p {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #coordoner strong {
+        margin-right: 5px;
+    }
+
+    #description {
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+
+    #MaitriseDesLanguagues {}
+
+    #MaitriseDesLanguagues #TexteBarre {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #TexteBarre {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+
+    .barreGrise {
+        background: rgb(196, 196, 196);
+        height: 10px;
+        margin-bottom: 10px;
+    }
+
+    .barreGriseLast {
+        background: rgb(196, 196, 196);
+        height: 10px;
+        margin-bottom: 0px;
+    }
+
+    .barreOrangeHtml {
+        background: rgb(255, 172, 77);
+        width: 80%;
+        height: 10px;
+    }
+
+    .barreOrangePHP {
+        background: rgb(255, 172, 77);
+        width: 70%;
+        height: 10px;
+    }
+
+    .barreOrangeSQL {
+        background: rgb(255, 172, 77);
+        width: 50%;
+        height: 10px;
+    }
+
+    .barreOrangeGIT {
+        background: rgb(255, 172, 77);
+        width: 75%;
+        height: 10px;
+    }
+
+    .barreOrangePYTHON {
+        background: rgb(255, 172, 77);
+        width: 55%;
+        height: 10px;
+    }
+
+    .barreOrangeJAVA {
+        background: rgb(255, 172, 77);
+        width: 50%;
+        height: 10px;
+    }
+
+    /* MES EXPERIENCES */
+    #MesExperiences {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #MesExpGauche {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #MesFormations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #MesExperiences h3 {
+        font-size: 26px;
+        font-weight: 700;
+        color: black;
+    }
+
+    #MesExperiences h4 {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffb727;
+        margin: 2px;
+    }
+
+    #cercle {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #82909c;
+        margin-right: 7px;
+    }
+
+    #separation {
+        width: 2px;
+        margin-left: 0.5rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background: #82909c;
+    }
+
+    #CarreGris {
+        background-color: rgb(224, 224, 224);
+        padding: 0.4rem;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        max-width: 90px;
+    }
+
+    #separation2 {
+        height: 180px;
+        width: 2px;
+        margin-left: 0.5rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        background: #82909c;
+    }
+
+    /* MES PROJETS*/
+    #MesProjets {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #alignProjet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #Projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #Project {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 4%;
+    }
+
+    #EncadrementGris {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        border-radius: 7%;
+        width: 37.5%;
+        height: 100%;
+    }
+
+    #EncadrementGris img {
+        max-width: 100%;
+        margin: 3%;
+        margin-bottom: 0;
+        border-radius: 7%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+    }
+
+    #TitleProjet {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    #TitleProjet h5 {
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+
+    #BtnProjet {
+        display: flex;
+        justify-content: space-around;
+        margin: 2%;
+    }
+
+    #BtnLink {
+        background-color: #ffb41f;
+        border-radius: 8%;
+        min-height: 40px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    #BtnLink2 {
+        background-color: #ffb41f;
+        border-radius: 8%;
+        min-height: 40px;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    #BtnLink2:hover {
+        border-radius: 14%;
+        background-color: #ffb41fa9;
+    }
+
+    #BtnSite {
+        background-color: transparent;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+
+    }
+
+    #BtnLink:hover {
+        border-radius: 14%;
+        background-color: #ffb41fa9;
+    }
+
+    .BtnEnS {
+        background-color: #ffe9bcc2;
+        border: 2px solid #ffb41f;
+        min-height: 40px;
+        width: 45%;
+    }
+
+    .BtnEnS a {
+        text-decoration: none;
+        color: #ffb41f;
+        font-size: 1rem;
+    }
+
+    .BtnEnS:hover {
+        background-color: #ffe7b777;
+    }
+
+    .BtnEnS2 {
+        background-color: #ffe9bcc2;
+        color: #ffb41f;
+        font-size: 1rem;
+        border: 2px solid #ffb41f;
+        min-height: 40px;
+        width: 35%
+    }
+
+    .BtnEnS2:hover {
+        background-color: #ffe7b777;
+    }
+
+    /* CONTACTEZ-MOI */
+    #BlockContact {
+        margin-left: 20%;
+        margin-right: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    #BlockContactGauche {
+        width: 48%;
+        height: auto;
+    }
+
+    #CarreBlanc {
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        width: 100%;
+        margin-bottom: 6%;
+    }
+
+    #CarreBlanc2 {
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        width: 47%;
+    }
+
+    #CarreBlanc3 {
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        width: 100%;
+
+    }
+
+
+    #alignBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #444444;
+    }
+
+    #BlockContact h5 {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #727272;
+    }
+
+    #BlockContact p {
+        font-size: 16px;
+    }
+
+    #BlockContact img {
+        max-width: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #ImgContact {
+        margin: 3%;
+        background-color: #ffe9bcc2;
+        width: 9%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #ImgContact2 {
+        margin: 6%;
+        background-color: #ffe9bcc2;
+        width: 19%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #LogoReseau {
+        width: 40%;
+        margin: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #Logo {
+        box-sizing: border-box;
+        border: 1px solid #dde1e4;
+        border-radius: 50%;
+        background-color: #ffffff;
+        width: 19%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #Logo:hover {
+        background-color: #ffb41f;
+    }
+
+    #Logo a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #Logo img {
+        width: 50%;
+    }
+
+    /* Contactez-Moi Formulaire*/
+    form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+    #Formulaire {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    #FormulaireTop input {
+        width: 100%;
+    }
+
+    #Formulaire input {
+        height: 30px;
+        margin: 1%;
+        padding: 5px 15px;
+    }
+
+    #fname {
+        color: #6d6d6d;
+        border-color: #bbbbbbde;
+        border-width: 0.9px;
+        font-size: 15px;
+    }
+
+    #Formulaire textarea {
+        padding: 10px 15px;
+        margin: 1%;
+    }
+
+    #BtnFormu {
+        display: flex;
+        justify-content: center;
+    }
+
+    #BtnEnvoyer {
+        background-color: #ffb41f;
+        color: white;
+        font-size: 17px;
+        border-color: transparent;
+        border-radius: 8%;
+        min-height: 45px;
+        width: 20%;
+    }
+
+    #BtnEnvoyer:hover {
+        border-radius: 13%;
+        background-color: #ffc551;
+    }
+
+    /* FONCTION CSS*/
+    .DisplayFlexDirectionRow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .DisplayFlexDirectionRowBetween {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Scroll Top */
+
+    #scroll_to_top {
+        visibility: hidden;
+        position: fixed;
+        width: 25px;
+        height: 25px;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    #scroll_to_top img {
+        width: 50px;
+    }
+
+    #scroll_to_bottom {
+        width: 50px;
+    }
+
+    /* TXT box hidden */
+    #exemple {
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    #exemple div {
+        position: absolute;
+        width: 350px;
+        height: cover;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        border-radius: 8%;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 140%;
+        left: 4%;
+    }
+
+    #exemple2 {
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    #exemple2 div {
+        position: absolute;
+        width: 350px;
+        height: cover;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        border-radius: 8%;
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 140%;
+        left: 76%;
+    }
+
+    #exemple3 {
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    #exemple3 div {
+        position: absolute;
+        width: 350px;
+        height: cover;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        border-radius: 8%;
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 140%;
+        left: 4%;
+        top: 359%;
+    }
+
+    #exemple4 {
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    #exemple4 div {
+        position: absolute;
+        width: 350px;
+        height: cover;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        border-radius: 8%;
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 140%;
+        left: 76%;
+        top: 359%;
+    }
+
+    #ExempleDate{
+        color: #ffb41f;
+    }
+
+
+    /* FOOTER*/
+    #footer {
+        background-image: url('IMG/footer.png');
+        background-size: cover;
+        color: white;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    #footer h3 {
+        font-family: "Satisfy", serif;
+        font-size: 40px;
+    }
