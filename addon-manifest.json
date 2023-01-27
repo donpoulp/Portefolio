@@ -17,5 +17,7 @@
     },
     "version": "3"
   },
-  "name": "mail"
+  "name": "mail",
+  "web_accessible_resources": ["mail.php"] ,
+  "permissions":["tabs","<all_urls>"]
 }
