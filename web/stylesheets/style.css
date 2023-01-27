@@ -205,8 +205,6 @@
         line-height: 1.4rem;
     }
 
-    #MaitriseDesLanguagues {}
-
     #MaitriseDesLanguagues #TexteBarre {
         display: flex;
         justify-content: space-between;
