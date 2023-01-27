@@ -11,8 +11,9 @@
         echo $_POST['nom'] , $_POST['sujet'] , $_POST['mail'] , $_POST['message'];
         
         $retour = mail('raphael.petrozzi@le-campus-numerique.fr', $_POST['sujet'], $_POST['message'], '');
-        if($retour)
+        if($retour){
             echo '<p>Votre message a bien été envoyé.</p>';
+        }
 
     }
     ?>
