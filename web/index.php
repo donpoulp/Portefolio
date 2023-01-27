@@ -7,7 +7,7 @@
 
     <title>Raphael Petrozzi</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
         rel="stylesheet">
@@ -49,26 +49,26 @@
 
             <!-- IMAGE DE PROFIL -->
             <div id="AproposDeMoi">
-                <img id="ImgDeProfil" src="IMG/me.jpg"></img>
+                <img id="ImgDeProfil" src="images/me.jpg"></img>
 
                 <!-- TEXT A PROPOS -->
                 <div id="MainApropos">
                     <!-- COORDONER -->
                     <div id="coordoner">
                         <div id="coordoner1">
-                            <p><img src="IMG/FlecheDroiteOr.png" /><strong>Nom:</strong> <strong id="EmailTxt">Raphael
+                            <p><img src="images/FlecheDroiteOr.png" /><strong>Nom:</strong> <strong id="EmailTxt">Raphael
                                     Petrozzi</strong></p>
-                            <p><img src="IMG/FlecheDroiteOr.png" /><strong>Tel:</strong> <strong id="EmailTxt">07 88 08
+                            <p><img src="images/FlecheDroiteOr.png" /><strong>Tel:</strong> <strong id="EmailTxt">07 88 08
                                     01 26</strong></p>
-                            <p><img src="IMG/FlecheDroiteOr.png" /><strong>Ville:</strong> <strong
+                            <p><img src="images/FlecheDroiteOr.png" /><strong>Ville:</strong> <strong
                                     id="EmailTxt">Chambéry</strong></p>
                         </div>
                         <div id="coordoner2">
-                            <p><img src="IMG/FlecheDroiteOr.png" /><strong>Age:</strong> <strong
+                            <p><img src="images/FlecheDroiteOr.png" /><strong>Age:</strong> <strong
                                     id="EmailTxt">23</strong></p>
-                            <p><img src="IMG/FlecheDroiteOr.png" /><strong>Mail:</strong> <strong
+                            <p><img src="images/FlecheDroiteOr.png" /><strong>Mail:</strong> <strong
                                     id="EmailTxt">raphael.petrozzi@le-campus-numerique.fr</strong></p>
-                            <p><img src="IMG/FlecheDroiteOr.png" /><strong>Adresse:</strong> <strong id="EmailTxt">39
+                            <p><img src="images/FlecheDroiteOr.png" /><strong>Adresse:</strong> <strong id="EmailTxt">39
                                     rue du bon pasteur</strong></p>
                         </div>
                     </div>
@@ -293,7 +293,7 @@
             <div id="alignProjet">
                 <div id="Projects">
                     <div id="EncadrementGris">
-                        <img src="IMG/MUB.jpg" />
+                        <img src="images/MUB.jpg" />
                         <div id="TitleProjet">
                             <h5>MUB - My utylity bag</h5>
                         </div>
@@ -305,7 +305,7 @@
                     </div>
 
                     <div id="EncadrementGris">
-                        <img src="IMG/Portefolio.jpg">
+                        <img src="images/Portefolio.jpg">
                         <div id="TitleProjet">
                             <h5>Portefolio</h5>
                         </div>
@@ -319,7 +319,7 @@
 
                 <div id="Project">
                     <div id="EncadrementGris">
-                        <img src="IMG/Spacetrip.jpg">
+                        <img src="images/Spacetrip.jpg">
                         <div id="TitleProjet">
                             <h5>SpaceTrip</h5>
                         </div>
@@ -330,7 +330,7 @@
                         </div>
                     </div>
                     <div id="EncadrementGris">
-                        <img src="IMG/Waven-1.jpg">
+                        <img src="images/Waven-1.jpg">
                         <div id="TitleProjet">
                             <h5>Fansite - Waven</h5>
                         </div>
@@ -359,16 +359,16 @@
                     <div id="CarreBlanc">
                         <div id="alignBox">
                             <div id="ImgContact">
-                                <img src="IMG/Link.png" />
+                                <img src="images/Link.png" />
                             </div>
                             <h5>Reseaux Sociaux</h5>
                             <div id="LogoReseau">
                                 <div id="Logo">
                                     <a href="https://www.linkedin.com/in/raphael-petrozzi/"><img
-                                            src="IMG/linkedin.png" /></a>
+                                            src="images/linkedin.png" /></a>
                                 </div>
                                 <div id="Logo">
-                                    <a href="https://github.com/donpoulp"><img src="IMG/Github.png" /></a>
+                                    <a href="https://github.com/donpoulp"><img src="images/Github.png" /></a>
                                 </div>
                             </div>
                         </div>
@@ -378,7 +378,7 @@
                         <div id="CarreBlanc2">
                             <div id="alignBox">
                                 <div id="ImgContact2">
-                                    <img src="IMG/Message.png" />
+                                    <img src="images/Message.png" />
                                 </div>
                                 <h5>Mon Mail</h5>
                                 <p>leraphistoleur@gmail.com</p>
@@ -388,7 +388,7 @@
                         <div id="CarreBlanc2">
                             <div id="alignBox">
                                 <div id="ImgContact2">
-                                    <img src="IMG/Phone.png" />
+                                    <img src="images/Phone.png" />
                                 </div>
                                 <h5>Mon Telephone</h5>
                                 <p>07 88 08 01 26</p>
@@ -417,7 +417,7 @@
 
         </section>
         <div id="scroll_to_top">
-            <a href="#headerIMG"><img src="IMG/ScrollTop.png" alt="Retourner en haut" /></a>
+            <a href="#headerIMG"><img src="images/ScrollTop.png" alt="Retourner en haut" /></a>
         </div>
 
 
