@@ -1,7 +1,7 @@
 (function () {
     // NAVBAR STYCKY **************************************************
     // on cible l'objet nav
-    let objNav = document.querySelector("nav");
+    let objNav = document.getElementById("MainNav");
     // on mémorise la position de nav
     let memoPositionNav = objNav.offsetTop;
 
@@ -9,7 +9,7 @@
         // position du curseur au scroll
         var posCurseur = this.pageYOffset;
         // je teste la différence de distance entre le scroll et nav
-        if (memoPositionNav - posCurseur < 1) {
+        if (memoPositionNav - posCurseur < -700) {
             objNav.style.position = "fixed";
             objNav.style.width = "40%";
             objNav.style.backgroundColor = "rgba(30, 30, 30, 0.800)";
@@ -17,6 +17,33 @@
         if (memoPositionNav - posCurseur > -1) {
             objNav.style.position = "static";
             objNav.style.backgroundColor = "transparent";
+        }
+    }
+
+    // on cible l'objet nav
+    let objBur = document.getElementById("BurgerMenu");
+    // on mémorise la position de nav
+    let memoPositionBur = objBur.offsetTop;
+
+    function sticky2() {
+        // position du curseur au scroll
+        var posCurseur = this.pageYOffset;
+        // je teste la différence de distance entre le scroll et nav
+        if (memoPositionBur - posCurseur < -700) {
+            objBur.style.position = "fixed";
+            objBur.style.marginLeft = "85%";
+            objBur.style.backgroundColor = "rgba(30, 30, 30, 0.200)";
+            objBur.style.boxShadow = "0px 0px 15px rgba(0, 0, 0, 0.26)";
+            objBur.style.marginTop = "5px";
+
+            
+        }
+        if (memoPositionBur - posCurseur > -1) {
+            objBur.style.position = "static";
+            objBur.style.backgroundColor = "transparent";
+            objBur.style.marginLeft = "85%";
+            objBur.style.boxShadow = "none";
+            objBur.style.marginTop = "0";
         }
     }
 
@@ -220,6 +247,7 @@
 
     // evenement
     window.addEventListener("scroll", sticky);
+    window.addEventListener("scroll", sticky2);
     window.addEventListener("scroll", TextColorNavAcceuil);
     window.addEventListener("scroll", TextColorNavApropos);
     window.addEventListener("scroll", TextColorNavExperience);
@@ -227,3 +255,5 @@
     window.addEventListener("scroll", TextColorNavContact);
     window.addEventListener("scroll", ScrollTopHidden);
 })()
+
+

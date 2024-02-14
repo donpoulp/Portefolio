@@ -10,14 +10,14 @@
     if (isset($_POST['message']) || isset($_POST['sujet']) || isset($_POST['mail']) || isset($_POST['nom'])) {
         
         $retour = mail('raphael.petrozzi@le-campus-numerique.fr', $_POST['sujet'], $_POST['message'], '');
-        header("Location: https://raphael-petrozzi-portefolio.herokuapp.com/#ContactezMoi");
-        exit;
+
 
         if($retour){
             echo '<p>Votre message a bien été envoyé.</p>';
         }
 
-
+        header("Location: index.php#ContactezMoi");
+        exit;
     }
 ?>
 </body>

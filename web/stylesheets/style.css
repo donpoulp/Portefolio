@@ -1,8 +1,14 @@
-    html body {
+    html{
         margin: 0;
         padding: 0;
         font-family: "Open Sans", sans-serif;
-        height: 100%;
+        width: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
     }
 
     h1,
@@ -19,7 +25,7 @@
         margin-top: 0;
         width: 100%;
         height: 100vh;
-        background: url('/images/RaphaelPetrozzi_Portefolio_HeaderIMG.png');
+        background: url('../images/RaphaelPetrozzi_Portefolio_HeaderIMG.png');
         background-size: cover;
     }
 
@@ -27,15 +33,22 @@
     #header {
         background: transparent;
     }
+    label, #toggle
+    {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+ 
 
-    #nav {
+    #MainNav {
         padding-left: 30%;
         padding-right: 30%;
         padding-top: 15px;
         padding-bottom: 15px;
         display: flex;
         justify-content: space-evenly;
-        z-index: 2;
+        z-index: 3;
     }
 
     #NavApropos {
@@ -78,11 +91,90 @@
         color: #ffc551;
     }
 
-    #nav a {
+    #MainNav a {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 13px;
     }
+
+    /* MENU LANGUE */
+    .lang-menu{
+        position: absolute;
+        top: 10px;
+        right: 10%;
+        color: white;
+     
+     }
+     .selected-lang{
+         cursor: pointer;
+         display: flex;
+         justify-content: space-between;
+         line-height: 2.2;
+         text-transform: uppercase;
+         font-size: 14px;
+     }
+     .selected-lang:before{
+         content: '';
+         display: block;
+         width: 32px;
+         height: 32px;
+         margin-right: 5px;
+     }
+     
+     .lang-menu ul{
+         margin: 0;
+         padding: 0;
+         background-color: rgba(30, 30, 30, 0.800);
+         border: 1px solid #3b434a;
+         box-shadow: 0px 1px 10px rgb(0, 0, 0.2);
+         border-radius: 5px;
+         display: none;
+         position: absolute;
+         top: 40;
+         left: 0;
+     }
+     
+     .lang-menu ul li {
+         list-style: none;
+         display: flex;
+         justify-content: space-between;
+         line-height: 2;
+         width: 110%;
+     }
+     
+     .lang-menu ul li a{
+         display: flex;
+         justify-content: space-between;
+         padding: 5px 10px;
+         color: white;
+         text-decoration: none;
+     }
+     
+     .lang-menu ul li a::before{
+         content: '';
+         display: inline-block;
+         width: 32px;
+         height: 32px;
+         vertical-align: middle;
+         margin-right:5px ;
+         
+     }
+     
+     .lang-menu ul li a:hover{
+         background-color: rgba(30, 30, 30, 0.400);
+         border-radius: 5px;
+     }
+     
+     .lang-menu:hover ul{
+         display: block;
+     }
+     
+     #us:before{
+         background-image: url("https://flagsapi.com/US/flat/32.png");
+     }
+     #fr:before{
+         background-image: url("https://flagsapi.com/FR/flat/32.png");
+     }
 
     /* SOUS-HEADER*/
     #sous-header {
@@ -182,6 +274,7 @@
         margin-top: 2px;
         font-size: 15px;
         font-weight: normal;
+        white-space: nowrap;
     }
 
     #coordoner img {
@@ -331,6 +424,38 @@
         margin-right: 20px;
         background: #82909c;
     }
+    #separation3 {
+        height: 150px;
+        width: 2px;
+        margin-left: 0.5rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        background: #82909c;
+    }
+    #MesExpPro{
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+    #MesExpPro strong{
+        margin-right: 3px;
+    }
+    #MesExpPro li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #CarreGrisExpPro{
+        background-color: rgb(224, 224, 224);
+        padding: 0.4rem;
+        text-align: center;
+        margin-left: 0;
+        font-size: 15px;
+        max-width: 90px;
+        margin-left: 5px;
+    }
 
     /* MES PROJETS*/
     #MesProjets {
@@ -365,7 +490,7 @@
     }
 
     #EncadrementGris img {
-        max-width: 100%;
+        width: 94%;
         margin: 3%;
         margin-bottom: 0;
         border-radius: 7%;
@@ -397,6 +522,7 @@
         display: flex;
         justify-content: center;
         text-decoration: none;
+        white-space: nowrap;
     }
 
     #BtnLink2 {
@@ -407,6 +533,7 @@
         display: flex;
         justify-content: center;
         text-decoration: none;
+        white-space: nowrap;
     }
 
     #BtnLink2:hover {
@@ -512,24 +639,24 @@
     }
 
     #BlockContact img {
-        max-width: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        max-width: 25px;
     }
 
     #ImgContact {
-        margin: 3%;
+        padding: 2%;
         background-color: #ffe9bcc2;
-        width: 9%;
+        width: auto;
         border-radius: 50%;
         display: flex;
         justify-content: center;
+        margin: 3%;
     }
 
     #ImgContact2 {
+        padding: 4%;
         margin: 6%;
         background-color: #ffe9bcc2;
-        width: 19%;
+        width: auto;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -544,11 +671,10 @@
     }
 
     #Logo {
-        box-sizing: border-box;
+        padding: 4.5%;
         border: 1px solid #dde1e4;
         border-radius: 50%;
         background-color: #ffffff;
-        width: 19%;
         display: flex;
         justify-content: center;
     }
@@ -564,7 +690,6 @@
     }
 
     #Logo img {
-        width: 50%;
     }
 
     /* Contactez-Moi Formulaire*/
@@ -659,10 +784,10 @@
     /* TXT box hidden */
     #exemple {
         visibility: hidden;
-        width: 100%;
+        width: auto;
         height: 100%;
         text-align: center;
-        z-index: 1000;
+        z-index: 2;
     }
 
     #exemple div {
@@ -676,15 +801,15 @@
         text-align: center;
         font-size: 16px;
         line-height: 140%;
-        left: 4%;
+        left: 3%;
     }
 
     #exemple2 {
         visibility: hidden;
-        width: 100%;
+        width: auto;
         height: 100%;
         text-align: center;
-        z-index: 1000;
+        z-index: 2;
     }
 
     #exemple2 div {
@@ -698,15 +823,15 @@
         text-align: center;
         font-size: 15px;
         line-height: 140%;
-        left: 76%;
+        right: 3%;
     }
 
     #exemple3 {
         visibility: hidden;
-        width: 100%;
+        width: auto;
         height: 100%;
         text-align: center;
-        z-index: 1000;
+        z-index: 2;
     }
 
     #exemple3 div {
@@ -720,16 +845,16 @@
         text-align: center;
         font-size: 15px;
         line-height: 140%;
-        left: 4%;
-        top: 359%;
+        margin-top: 2.5%;
+        left: 3%;
     }
 
     #exemple4 {
         visibility: hidden;
-        width: 100%;
+        width: auto;
         height: 100%;
         text-align: center;
-        z-index: 1000;
+        z-index: 2;
     }
 
     #exemple4 div {
@@ -743,8 +868,7 @@
         text-align: center;
         font-size: 15px;
         line-height: 140%;
-        left: 76%;
-        top: 359%;
+        right: 3%;
     }
 
     #ExempleDate{
@@ -754,7 +878,7 @@
 
     /* FOOTER*/
     #footer {
-        background-image: url('/images/footer.png');
+        background-image: url('../images/footer.png');
         background-size: cover;
         color: white;
         height: 40vh;
@@ -770,3 +894,356 @@
         font-family: "Satisfy", serif;
         font-size: 40px;
     }
+
+/* RESPONSIVE */
+
+/* Petit ecran de pc */
+@media screen and (min-width:1024px) and (max-width:1600px){
+/* NAV */
+    nav #MainNav a{
+        color: white!important;
+    }
+/*MES EXPERIENCES */
+    #listeDiplome{
+        font-size: 14px;
+    }
+    #MesExpPro{
+        font-size: 14px;
+    }
+    #BtnSite{
+        font-size: 18px;
+    }
+
+/* POP-UP mes projet*/
+    #exemple div{
+        width: 300px;
+        left: 2%;
+    }
+    #exemple2 div{
+        width: 300px;
+        right: 2%;
+    }
+    #exemple3 div{
+        width: 300px;
+        left: 2%;
+    }
+    #exemple4 div{
+        width: 300px;
+        right: 2%;
+    }
+/* CONTEZ-MOI */
+    #BlockContact img {
+        max-width: 25px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+}
+
+/* ecran taille tablette */
+@media screen and (min-width:780px) and (max-width:1080px) {
+/* NAV */
+    #nav {
+        justify-content: space-between;
+    }
+    nav #MainNav a{
+        color: white!important;
+    }
+/* A PROPOS */
+    #Apropos {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #MesTitles{
+        top: 70px;
+        margin-bottom: 80px;
+    }
+    #ImgDeProfil {
+        height: 500px;
+        margin-right: 2%;
+    }
+    #coordoner img {
+        width: 20px;
+    }
+    #coordoner strong {
+        margin-right: 5px;
+    }
+    #EmailTxt {
+        margin-top: 2px;
+        font-size: 13px;
+    }
+    #TitleCoord {
+        font-size: 15px;
+    }
+    #description {
+    font-size: 13px;
+    line-height: 1.1rem;
+    }
+    #TexteBarre{
+        font-size: 0.7REM;
+    }
+    .barreGrise{
+        margin-bottom: 5PX;
+    }
+    /* Mes Experiences */
+    #MesExperiences{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #MesExperiences h3{
+        font-size: 24px;
+    }
+    #MesExperiences h4{
+        font-size: 16px;
+    }
+    #separation2{
+        height: 155px;
+    }
+/* Mes Projets */
+    #MesProjets{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #exemple div{
+        width: 300px;
+        left: 11.5%;
+    }
+    #exemple2 div{
+        width: 300px;
+        right: 11.5%;
+    }
+    #exemple3 div{
+        width: 300px;
+        left: 11.5%;
+        margin-top: 4%;
+    }
+    #exemple4 div{
+        width: 300px;
+        right: 11.5%;
+    }
+/* Contactez-moi */
+    #BlockContact{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #BtnEnvoyer{
+        width: auto;
+    }
+}
+
+
+/* smartphone */
+@media screen and (max-width:767px){
+/* Mes Titre */
+    #MesTitles{
+        top: 70px;
+        margin-bottom: 60px;
+    }
+    #MesTitles h2{
+        font-size: 28px;
+    }
+    #MesTitles span{
+        font-size: 38px;
+    }
+/* NAV */
+    nav #MainNav{
+        display: none;
+        flex-direction: column;
+        height: 200px;
+
+    }
+    nav #MainNav a{
+        white-space:nowrap;
+        font-size: 20px;
+        text-align: center;
+        color: white!important;
+    }
+    #BurgerMenu 
+    {
+        width: 30px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 85%;
+        font-size: 50px;
+        color: white;
+        cursor: pointer;
+        z-index: 10000;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    #toggle:checked + #MainNav {
+        display: flex;
+    }
+    .lang-menu{
+        right: auto;
+        left: 7%;
+     }
+     .txtsmartphone{
+        display: none;
+     }
+     .lang-menu ul {
+        top: 40px;
+     }
+     .lang-menu ul li a {
+        padding: 3px 7px;
+     }
+     .lang-menu ul li a::before {
+        margin-right: auto;
+     }
+/* HEADER */
+    #sous-headerContainer{
+        margin-top: 25%;
+    }
+    #sous-headerContainer h1{
+        font-size: 55px;
+    }
+/* A Propos */
+    #Apropos {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #AproposDeMoi{
+        flex-direction: column;
+    }
+    #Apropos {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #ImgDeProfil{
+        height: 475px;
+        margin-right:0;
+        margin-bottom: 4.5%;
+    }
+    #coordoner{
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    #coordoner p{
+        margin-bottom: 5px;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #coordoner img{
+        height: 3%;
+        width: 7%;
+    }
+    #TitleCoord{
+        font-size: 16px;
+    }
+    #EmailTxt{
+        font-size: 13px;
+    }
+    #description{
+        font-size: 15px;
+        line-height:1.3rem;
+        margin-top: 2px;
+    }
+    #MaitriseDesLanguagues{
+        margin-top: 7px;
+    }
+/* MES EXPERIENCES */
+    #MesExperiences{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #MesExpGauche{
+        flex-direction: column;
+    }
+    #listeDiplome{
+        font-size: 12px;
+    }
+    #ExpPro{
+        margin-left: 20px;
+    }
+    #MesExpPro{
+        padding: 0;
+    }
+    #MesExpPro li{
+        font-size: 12px;
+        flex-wrap: nowrap;
+    }
+    #ExpPro{
+        margin-left: 0;
+    }
+    #CarreGrisExpPro{
+        font-size: 14px;
+    }
+    #hiddenMobilTxt{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+/* MES PROJET */
+    #MesProjets{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #Projects{
+        flex-direction: column;
+    }
+    #Project{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    #EncadrementGris{
+        width: auto;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+    #BtnSite{
+        font-size: 1rem;
+    }
+    .BtnEnS2{
+        white-space: wrap;
+    }
+    .BtnEnS2 a{
+        font-size: 0.9rem;
+    }
+    #exemple div{
+        margin-left: 1%;
+        width: 82%;
+    }
+    #exemple2 div{
+        left: 5%;
+        width: 82%;
+    }
+    #exemple3 div{
+        left: 5%;
+        width: 82%;
+    }
+    #exemple4 div{
+        left: 5%;
+        width: 82%;
+    }
+/* CONTACTEZ-MOI */
+    #BlockContact{
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    #BlockContact img{
+        max-width: 25px;
+        max-height: 25px;
+    }
+    #BlockContactGauche{
+        width: auto;
+        margin-bottom: 5%;
+    }
+    #BtnEnvoyer{
+        width: auto;
+    }
+    #LogoReseau{
+        width: 60%;
+    }
+    #BlockContact p{
+        font-size: 12px;
+    }
+/* FOOTER */
+    .copyright{
+        font-size: 14px;
+    }
+}
+

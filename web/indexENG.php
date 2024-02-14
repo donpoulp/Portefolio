@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="eng">
 
 <head>
     <meta charset="utf-8">
@@ -19,18 +19,18 @@
                 <label for="toggle" id="BurgerMenu">☰</label>
                 <input type="checkbox" id="toggle">               
                 <div id="MainNav">
-                    <a href="#headerIMG" id="NavAcceuil">Accueil</a>
-                    <a href="#Apropos" id="NavApropos">A propos</a>
-                    <a href="#MesExperiences" id="NavExperience">Experiences</a>
-                    <a href="#MesProjets" id="NavProjet">Mes projets</a>
+                    <a href="#headerIMG" id="NavAcceuil">Welcome</a>
+                    <a href="#Apropos" id="NavApropos">About us</a>
+                    <a href="#MesExperiences" id="NavExperience">Experiments</a>
+                    <a href="#MesProjets" id="NavProjet">My projects</a>
                     <a href="#ContactezMoi" id="NavContact">Contact</a>
                     <div class="lang-menu">
-                    <div class="selected-lang" id="fr">
-                       <div class="txtsmartphone"> Français</div>
+                    <div class="selected-lang" id="us">
+                    <div class="txtsmartphone">English</div>
                     </div>
                     <ul>
                         <li>
-                            <a href="indexENG.php" id="us"><div class="txtsmartphone">English</div></a>
+                            <a href="index.php" id="fr"><div class="txtsmartphone">Français</div></a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
         <section id="sous-header">
             <div id="sous-headerContainer">
                 <h1>Raphael Petrozzi</h1>
-                <h2>TECHNICIEN DEVELOPPEUR WEB</h2>
+                <h2>WEB DEVELOPMENT TECHNICIAN</h2>
                 <a href="#Apropos"><img src="images/ScrollBottom.png" id="scroll_to_bottom" /></a>
             </div>
         </section>
@@ -56,8 +56,8 @@
 
             <!-- TITRE -->
             <div id="MesTitles">
-                <span>A propos de moi</span>
-                <h2>A propos de moi</h2>
+                <span>About me</span>
+                <h2>About me</h2>
             </div>
 
             <!-- IMAGE DE PROFIL -->
@@ -69,25 +69,25 @@
                     <!-- COORDONER -->
                     <div id="coordoner">
                         <div id="coordoner1">
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Nom:</strong> <strong id="EmailTxt">Raphael
+                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Name:</strong> <strong id="EmailTxt">Raphael
                                     Petrozzi</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Tel:</strong> <strong id="EmailTxt">07 83 57 89 64</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Ville:</strong> <strong id="EmailTxt">Chambéry</strong></p>
+                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Phone:</strong> <strong id="EmailTxt">07 83 57 89 64</strong></p>
+                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">City:</strong> <strong id="EmailTxt">Chambéry</strong></p>
                         </div>
                         <div id="coordoner2">
                             <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Age:</strong> <strong id="EmailTxt">23</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Mail:</strong> <strong id="EmailTxt">raphael.petrozzi@le-campus-numerique.fr</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Adresse:</strong> <strong id="EmailTxt">39
+                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">E-mail:</strong> <strong id="EmailTxt">raphael.petrozzi@le-campus-numerique.fr</strong></p>
+                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Adress:</strong> <strong id="EmailTxt">39
                                     rue du bon pasteur</strong></p>
                         </div>
                     </div>
                     <!-- TEXTE MISE EN AVANT -->
                     <div id="description">
-                        <p>Développeur junior depuis décembre 2022, suite à une formation équivalent bac +2
-                            de développeur web fullstack "en alternance".<br> Je souhaite continuer à me former
-                            dans ce domaine en débutant une licence de Concepteur développeur d'applications en
-                            Septembre 2023. Je cherche à m'exercer au sein d'équipes ou d'entreprises qui travaillent
-                            sur des projets de développement web. En attendant je me perfectionne au travers de projets tel que ce Portefolio
+                        <p>Junior developer since December 2022, following a Bac +2 equivalent training course as a fullstack web developer.<br>
+                        I would like to continue my training
+                            in this field by starting a degree in Application Design and Development in
+                            September 2023. I'm looking to work in teams or companies that work on web development projects.
+                            web development projects. In the meantime I'm perfecting my skills through projects such as this Portfolio
                             fait sans aucun Framework.</p>
                     </div>
                     <!-- PROGRESS BARRE DE MAITRISE DES LANGUAGUES -->
@@ -138,26 +138,26 @@
         <!-- SECTION MES EXPERIENCES -->
         <section id="MesExperiences">
             <div id="MesTitles">
-                <span>Mes Experiences</span>
-                <h2>Mes Experiences</h2>
+                <span>My Experiences</span>
+                <h2>My Experiences</h2>
             </div>
 
             <!-- PARTIE GAUCHE -->
             <div id="MesExpGauche">
                 <!-- FORMATION -->
                 <div id="MesFormations">
-                    <h3>Formation</h3>
+                    <h3>Training</h3>
                     <!-- NIVEAU EN LANGUES -->
                     <div class="DisplayFlexDirectionRow">
                         <div id="cercle"></div>
-                        <h4>Niveau en langues</h4>
+                        <h4>Language level</h4>
                     </div>
                     <div class="DisplayFlexDirectionRow">
                         <div id="separation"> </div>
                         <div>
                             <ul>
-                                <li>Anglais : B2</li>
-                                <li>Italien : B2</li>
+                                <li>English : B2</li>
+                                <li>Italian : B2</li>
                             </ul>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                     <!-- MAITRISE LOGICIEL -->
                     <div class="DisplayFlexDirectionRow">
                         <div id="cercle"></div>
-                        <h4>Maitrise de logiciel</h4>
+                        <h4>Software expertise</h4>
                     </div>
                     <div class="DisplayFlexDirectionRow">
                         <div id="separation"> </div>
@@ -182,16 +182,16 @@
                     <!-- DIPLOME -->
                     <div class="DisplayFlexDirectionRow">
                         <div id="cercle"></div>
-                        <h4>Diplomes</h4>
+                        <h4>Diplomas</h4>
                     </div>
                     <div class="DisplayFlexDirectionRow">
                         <div id="separation2"> </div>
                         <div id="ListesDiplomes">
                             <div id="CarreGris">2021-2022</div>
-                            <div id="listeDiplome">Formation développeur web Campus Numérique in the Alpes</div>
+                            <div id="listeDiplome">Web developer training Campus Numérique in the Alpes</div>
                             <div id="CarreGris">2017-2018</div>
-                            <div id="listeDiplome">BAC STI2D option énergie environnement<br> (réalisation d'un projet
-                                de groupe sur l'année entière)</div>
+                            <div id="listeDiplome">BAC STI2D energy and environment option<br> (carrying out a group
+                                over the whole year)</div>
                             
                         </div>
                     </div>
@@ -199,7 +199,7 @@
 
                 <!-- EXPERIENCES PRO -->
                 <div id="MesFormations">
-                    <h3>Experience professionnelle</h3>
+                    <h3>Professional experience</h3>
                     <div class="DisplayFlexDirectionRow">
                         <div id="cercle"></div>
                         <h4>Activites</h4>
@@ -208,10 +208,10 @@
                         <div id="separation3"> </div>
                         <div id="ExpPro">
                             <ul id="MesExpPro">
-                                <li><strong>Développeur web</strong> chez MUB<div id="CarreGrisExpPro">2021-2022</div></li>
-                                <li>Différentes missions d'<strong>intérim</strong><div id="CarreGrisExpPro">2020-2021</div></li>
-                                <li><strong>Employer polyvalent</strong><div id="hiddenMobilTxt">pour des grandes chaînes</div><div id="CarreGrisExpPro">2019-2020</div></li>                        
-                                <li><strong>Arbitre officiel</strong> de basket-ball<div id="CarreGrisExpPro">2015-2017</div></li>
+                                <li><strong>Web Developer</strong> with MUB<div id="CarreGrisExpPro">2021-2022</div></li>
+                                <li>Various interim assignments<div id="CarreGrisExpPro">2020-2021</div></li>
+                                <li><strong>Multi-skilled worker</strong><div id="hiddenMobilTxt">for major chains</div><div id="CarreGrisExpPro">2019-2020</div></li>                        
+                                <li>Official basket ball referee<div id="CarreGrisExpPro">2015-2017</div></li>
                                 
 
                             </ul>
@@ -229,22 +229,22 @@
                             <div id="separation"> </div>
                             <div>
                                 <ul>
-                                    <li>Présentation claire des idées</li>
-                                    <li>Attentif, à l'écoute</li>
+                                    <li>Clear presentation of ideas</li>
+                                    <li>Attentive and attentive</li>
                                 </ul>
                             </div>
                         </div>
                         <!-- ADAPTABILITE -->
                         <div class="DisplayFlexDirectionRow">
                             <div id="cercle"></div>
-                            <h4>ADAPTABILITÉ</h4>
+                            <h4>ADAPTABILITY</h4>
                         </div>
                         <div class="DisplayFlexDirectionRow">
                             <div id="separation"> </div>
                             <div>
                                 <ul>
-                                    <li>Respectueux</li>
-                                    <li>Coopératif</li>
+                                    <li>Respectful</li>
+                                    <li>Cooperative</li>
                                 </ul>
                             </div>
                         </div>
@@ -256,19 +256,19 @@
         <!-- Section Mes Projets -->
         <section id="MesProjets">
             <div id="MesTitles">
-                <span>Mes Projets</span>
-                <h2>Mes Projets</h2>
+                <span>My Projects</span>
+                <h2>My Projects</h2>
             </div>
 
             <div id="alignProjet">
             <!-- Boite de dialogue -->
             <div id="exemple">
                 <div>
-                    <p>MUB est l'entreprise qui m'a accompagné lors de l'alternance de mon bac + 2 développeur web.<br>
-                        Le projet était la migration d'une version 1.6 à 1.7 d'un site Prestashop, tout en
-                        apportant des améliorations et de nouveaux contenus au site.
+                    <p>MUB is the company that worked with me during my work-study course for my bac + 2 web developer diploma.
+                        The project involved migrating a Prestashop site from version 1.6 to 1.7, while at the same time
+                        improvements and new content to the site.
                     </p>
-                    <strong id="ExempleDate">Décembre 2021 - Décembre 2022</strong>
+                    <strong id="ExempleDate">December 2021 - December 2022</strong>
                 </div>
             </div>
                 <div id="Projects">
@@ -278,40 +278,39 @@
                             <h5>MUB - My utylity bag</h5>
                         </div>
                         <div id="BtnProjet">
-                            <button class="BtnEnS" id="BtnCallEvent1"><a>En savoir plus</a></button>
-                            <a id="BtnLink" href="https://www.myutilitybag.com/" target="_blank"><button id="BtnSite">Site
-                                    Web</button></a>
+                            <button class="BtnEnS" id="BtnCallEvent1"><a>Find out more</a></button>
+                            <a id="BtnLink" href="https://www.myutilitybag.com/" target="_blank"><button id="BtnSite">Website</button></a>
                         </div>
                     </div>
                     <div id="exemple2">
                         <div>
-                            <p>C'est le portefolio où vous vous trouvez en ce moment même. Ce portefolio a été
-                                réalisé en 3 semaines avec les langages HTML / CSS / JS et sans l'utilisation de framework.
-                                J'ai produit un bon travail de design et de dynamisme. Sa responsivité, avec bon nombre
-                                de fonctionnalités essentielles ou non, avait pour simple but de m'exercer au code.</p>
-                            <strong id="ExempleDate">Janvier 2023</strong>
+                            <p>This is the portfolio you're in right now. This portfolio was
+                                created in 3 weeks using HTML / CSS / JS and no framework.
+                                I produced a good, dynamic design. Its responsiveness, with a good number
+                                of essential and non-essential functions, was simply intended to give me practice in coding.</p>
+                            <strong id="ExempleDate">January 2023</strong>
                         </div>
                     </div>
                     <div id="EncadrementGris">
                         <img src="images/Portefolio.jpg">
                         <div id="TitleProjet">
-                            <h5>Portefolio</h5>
+                            <h5>Portfolio</h5>
                         </div>
                         <div id="BtnProjet">
-                            <a id="BtnLink2" href="#headerIMG"><button id="BtnSite">Site Web</button></a>
+                            <a id="BtnLink2" href="#headerIMG"><button id="BtnSite">Web Site</button></a>
                             <a id="BtnLink2" href="https://github.com/donpoulp/Portefolio" target="_blank"><button id="BtnSite">GitHub</button></a>
-                            <button class="BtnEnS2" id="BtnCallEvent2"><a>En savoir plus</a></button>
+                            <button class="BtnEnS2" id="BtnCallEvent2"><a>Find out more</a></button>
                         </div>
                     </div>
                 </div>
 
                 <div id="exemple3">
                         <div>
-                            <p>Lors des 6 premiers mois de mon cursus TechDev avec le Campus Numérique in
-                            the Alpes nous avons fait un gros module sur PHP et ce qui l'entoure. Lors de ce
-                            module j'ai pu développer en équipe et par la suite seul ce site SpaceTrip qui
-                            est un site de vente de voyages interstellaires</p>
-                            <strong id="ExempleDate">Juillet 2022 - Décembre 2022</strong>
+                            <p>During the first 6 months of my TechDev course with Campus Numérique in
+                            the Alpes, we did a big module on PHP and everything that surrounds it. During this
+                            module I was able to develop the SpaceTrip site, which is a site for selling
+                            is a site for selling interstellar travel</p>
+                            <strong id="ExempleDate">July 2022 - December 2022</strong>
                         </div>
                     </div>
 
@@ -322,19 +321,19 @@
                             <h5>SpaceTrip</h5>
                         </div>
                         <div id="BtnProjet">
-                            <button class="BtnEnS2" id="BtnCallEvent3"><a>En savoir plus</a></button>
-                            <a id="BtnLink2" href=""><button id="BtnSite" target="_blank">Site Web</button></a>
+                            <button class="BtnEnS2" id="BtnCallEvent3"><a>Find out more</a></button>
+                            <a id="BtnLink2" href=""><button id="BtnSite" target="_blank">Web Site</button></a>
                             <a id="BtnLink2" href="https://github.com/donpoulp/modulePHPsiteSP" target="_blank"><button id="BtnSite">GitHub</button></a>
                         </div>
                     </div>
                     <div id="exemple4">
                         <div>
-                            <p>Projet de création d'un fansite avec une équipe de développeurs passionnés sur le
-                                jeu "Waven" du studio Français "Ankama" qui devrait sortir pendant l'été 2023. L'idée est de
-                                proposer un site contenant multiples fonctionnalités (deckbuild, guide...) aux joueurs
-                                de ce jeu vidéo étant nous même des adeptes. Quoi de mieux qu'allier passion et travail.
+                            <p>Project to create a fansite with a team of passionate developers for the game
+                                game "Waven" from the French studio "Ankama", due for release in the summer of 2023. The idea is to
+                                offer a site with multiple features (deckbuild, guide...) to players of this video game
+                                of this video game, as we ourselves are fans. What better way to combine passion and work.
                             </p>
-                            <strong id="ExempleDate">Janvier 2023 - ( En cours )</strong>
+                            <strong id="ExempleDate">January 2023 - ( In progress )</strong>
                         </div>
                     </div>
                     <div id="EncadrementGris">
@@ -343,9 +342,9 @@
                             <h5>Fansite - Waven</h5>
                         </div>
                         <div id="BtnProjet">
-                            <a id="BtnLink2" href="https://www.figma.com/file/7WYczvh5NXvVqQRF5Fi0kE/Waven-Deckbuilder?node-id=79%3A227&t=65xbFDjRAg4CQvPT-0" target="_blank"><button id="BtnSite">Site Web</button></a>
+                            <a id="BtnLink2" href="https://www.figma.com/file/7WYczvh5NXvVqQRF5Fi0kE/Waven-Deckbuilder?node-id=79%3A227&t=65xbFDjRAg4CQvPT-0" target="_blank"><button id="BtnSite">Web Site</button></a>
                             <a id="BtnLink2" href="https://github.com/Thomas-Villegas/Waven_book" target="_blank"><button id="BtnSite">GitHub</button></a>
-                            <button class="BtnEnS2" id="BtnCallEvent4"><a>En savoir plus</a></button>
+                            <button class="BtnEnS2" id="BtnCallEvent4"><a>Find out more</a></button>
                         </div>
                     </div>
                 </div>
@@ -356,8 +355,8 @@
         <section id="ContactezMoi">
             <!-- TITRE -->
             <div id="MesTitles">
-                <span>Contactez-moi</span>
-                <h2>Contactez-moi</h2>
+                <span>Contact me at</span>
+                <h2>Contact me at</h2>
             </div>
 
             <!-- BOX -->
@@ -369,7 +368,7 @@
                             <div id="ImgContact">
                                 <img src="images/Link.png" />
                             </div>
-                            <h5>Réseaux Sociaux</h5>
+                            <h5>Social Networks</h5>
                             <div id="LogoReseau">
                                 <div id="Logo">
                                     <a href="https://www.linkedin.com/in/raphael-petrozzi/"><img src="images/linkedin.png" /></a>
@@ -387,7 +386,7 @@
                                 <div id="ImgContact2">
                                     <img src="images/Message.png" />
                                 </div>
-                                <h5>Mon Mail</h5>
+                                <h5>E-mail</h5>
                                 <p>leraphistoleur@gmail.com</p>
                             </div>
                         </div>
@@ -397,7 +396,7 @@
                                 <div id="ImgContact2">
                                     <img src="images/Phone.png" />
                                 </div>
-                                <h5>Mon Téléphone</h5>
+                                <h5>My phone</h5>
                                 <p>07 83 57 89 64</p>
                             </div>
                         </div>
@@ -409,13 +408,13 @@
                     <form method="post" action="mail.php" id="CarreBlanc3">
                         <div id="Formulaire">
                             <div class="DisplayFlexDirectionRowBetween" id="FormulaireTop">
-                                <input type="text" id="fname" name="nom" placeholder="Votre nom" required>
-                                <input type="mail" id="fname" name="mail" placeholder="Votre mail" required>
+                                <input type="text" id="fname" name="nom" placeholder="Name" required>
+                                <input type="mail" id="fname" name="mail" placeholder="E-mail" required>
                             </div>
-                            <input type="text" id="fname" name="sujet" placeholder="Sujet" required>
+                            <input type="text" id="fname" name="sujet" placeholder="Subject" required>
                             <textarea name="message" rows="8" id="message" placeholder="Message" required></textarea>
                             <div id="BtnFormu">
-                                <input type="submit" placeholder="Envoyer" id="BtnEnvoyer">
+                                <input type="submit" placeholder="Send" id="BtnEnvoyer">
                             </div>
                         </div>
                     </form>
@@ -434,7 +433,7 @@
         <h3>Raphaël Petrozzi</h3>
 
         <div class="copyright">
-            &copy; Copyright <strong><span>Raphael Petrozzi</span></strong>. Tous droits réservés
+            &copy; Copyright <strong><span>Raphael Petrozzi</span></strong>. All rights reserved
         </div>
     </footer>
     <script src="main.js"></script>
