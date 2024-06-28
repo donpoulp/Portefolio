@@ -1,29 +1,112 @@
-    html{
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans", sans-serif;
-        width: 100%;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans", sans-serif;
-        width: 100%;
-    }
+    :root{
+        /* CHARTE GRAPHIQUE */
+        --primary-color:#ffc551;
+        --secondary-color:white;
+        --tertiere-color:#ffb41f;
+        --primaryClaire-color:#ffe9bcc2;
+        --primary-backgroundColor:#ffb41fa9;
+        --grey-color:#3b434a;
+        /* ELEMENT COLOR */
+        --barreGrise-color:rgb(196, 196, 196);
+        --elementEXp-color:#82909c;
+        --boxGris-color:rgb(224, 224, 224);
+        --box-shadow:0px 0px 15px rgba(0, 0, 0, 0.26);
+        --btnHover-color:#ffe7b777;
+        /* font */
+        --fontFamily-txt:"Open Sans", sans-serif;
+        --fontFamily-title:"Raleway", sans-serif;
+        --fontFamily-sousTitle:"Satisfy", serif;
+        /* font-size */
+        --fontSize-12px:0.75rem;
+        --fontSize-13px:0.813rem;
+        --fontSize-14px:0.875rem;
+        --fontSize-15px:0.938rem;
+        --fontSize-16px:1rem;
+        --fontSize-18px:1.125rem;
+        --fontWeight-200:200;
+        --fontWeight-500:500;
+        --fontWeight-700:700;
 
+    }
+    html,body{
+        margin: 0;
+        padding: 0;
+        font-family: var(--fontFamily-txt);
+        width: 100%;
+        scroll-behavior: smooth;
+    }
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-        font-family: "Raleway", sans-serif;
+        font-family: var(--fontFamily-title);
+    }
+
+    /* FONCTION FLEXBOX CSS */
+    /* ROW */
+    .DisplayFlexDirectionRow, #coordoner p{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .DisplayFlexDirectionRowCenter, .ImgContact2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .DisplayFlexDirectionRowAlignCenter, #MesExpPro li, .Logo a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .DisplayFlexDirectionRowBetween, #TexteBarre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .DisplayFlexDirectionRowEvenly, .BtnProjet, .BtnLink2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* COLUMN */
+    .DisplayFlexDirectionColumn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .DisplayFlexDirectionColumnCenter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .DisplayFlexDirectionColumnAlignCenter, .alignBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .DisplayFlexDirectionColumnBetween{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .DisplayFlexDirectionColumnEvenly{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     /* HeaderIMG */
     #headerIMG {
-        margin-top: 0;
-        width: 100%;
         height: 100vh;
         background: url('../images/RaphaelPetrozzi_Portefolio_HeaderIMG.png');
         background-size: cover;
@@ -40,61 +123,27 @@
         padding: 0;
     }
  
-
     #MainNav {
         padding-left: 30%;
         padding-right: 30%;
         padding-top: 15px;
         padding-bottom: 15px;
-        display: flex;
-        justify-content: space-evenly;
         z-index: 3;
     }
 
-    #NavApropos {
-        color: white;
+    #NavApropos, #NavExperience, #NavProjet, #NavContact{
+        color: var(--secondary-color);
     }
 
-    #NavApropos:hover {
-        color: #ffc551;
-    }
-
-    #NavExperience {
-        color: white;
-    }
-
-    #NavExperience:hover {
-        color: #ffc551;
-    }
-
-    #NavProjet {
-        color: white;
-    }
-
-    #NavProjet:hover {
-        color: #ffc551;
-    }
-
-    #NavContact {
-        color: white;
-    }
-
-    #NavContact:hover {
-        color: #ffc551;
-    }
-
-    #NavAcceuil {
-        color: #ffb727;
-    }
-
-    #NavAcceuil:hover {
-        color: #ffc551;
+    #NavApropos:hover, #NavExperience:hover, #NavProjet:hover, #NavContact:hover, #NavAcceuil, #NavAcceuil:hover{
+        transition: all 0.5s ease-in-out;
+        color: var(--primary-color);
     }
 
     #MainNav a {
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: var(--fontSize-13px);
     }
 
     /* MENU LANGUE */
@@ -102,16 +151,13 @@
         position: absolute;
         top: 10px;
         right: 10%;
-        color: white;
-     
+        color: var(--secondary-color);
+        line-height: 2.2;
      }
      .selected-lang{
          cursor: pointer;
-         display: flex;
-         justify-content: space-between;
-         line-height: 2.2;
          text-transform: uppercase;
-         font-size: 14px;
+         font-size: var(--fontSize-14px);
      }
      .selected-lang:before{
          content: '';
@@ -125,7 +171,7 @@
          margin: 0;
          padding: 0;
          background-color: rgba(30, 30, 30, 0.800);
-         border: 1px solid #3b434a;
+         border: 1px solid var(--grey-color);
          box-shadow: 0px 1px 10px rgb(0, 0, 0.2);
          border-radius: 5px;
          display: none;
@@ -136,18 +182,16 @@
      
      .lang-menu ul li {
          list-style: none;
-         display: flex;
-         justify-content: space-between;
          line-height: 2;
          width: 110%;
      }
      
      .lang-menu ul li a{
-         display: flex;
-         justify-content: space-between;
          padding: 5px 10px;
-         color: white;
+         color: var(--secondary-color);
          text-decoration: none;
+         border-radius: 5px;
+         transition: background-color 0.3s ease-in-out
      }
      
      .lang-menu ul li a::before{
@@ -159,10 +203,10 @@
          margin-right:5px ;
          
      }
+
      
      .lang-menu ul li a:hover{
-         background-color: rgba(30, 30, 30, 0.400);
-         border-radius: 5px;
+         background-color: rgba(255, 255, 255, 0.527);
      }
      
      .lang-menu:hover ul{
@@ -178,33 +222,24 @@
 
     /* SOUS-HEADER*/
     #sous-header {
-        display: flex;
-        justify-content: center;
         height: 100%;
         flex-wrap: wrap;
         align-content: center;
-        color: white;
-    }
-
-    #sous-headerContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        color: var(--secondary-color);
     }
 
     #sous-header h1 {
         margin-bottom: 5px;
         font-size: 64px;
-        font-weight: 200;
-        font-family: "Satisfy", serif;
+        font-weight: var(--fontWeight-200);
+        font-family: var(--fontFamily-sousTitle);
     }
 
     #sous-header h2 {
-        font-size: 13px;
-        font-weight: 500;
+        font-size: var(--fontSize-13px);
+        font-weight: var(--fontWeight-500);
         letter-spacing: 1px;
         text-transform: uppercase;
-        text-align: center;
     }
 
     /* MES TITRES */
@@ -218,9 +253,9 @@
 
     #MesTitles h2 {
         font-size: 32px;
-        font-weight: 700;
+        font-weight: var(--fontWeight-700);
         text-transform: uppercase;
-        color: #3b434a;
+        color: var(--grey-color);
         position: relative;
         z-index: 1;
     }
@@ -232,47 +267,34 @@
         left: 0;
         right: 0;
         z-index: 0;
-        font-weight: 700;
+        font-weight: var(--fontWeight-700);
         font-size: 52px;
         text-transform: uppercase;
         line-height: 0;
-        font-family: "Raleway", sans-serif;
+        font-family: var(--fontFamily-title);
     }
 
-    /* A PROPOS*/
-    #Apropos {
+    /* A PROPOS */
+    #Apropos, #MesExperiences,#MesProjets, #ContactezMoi {
         margin-left: 20%;
         margin-right: 20%;
     }
 
     #ImgDeProfil {
         height: 600px;
+    }
+    .imgbox{
         margin-right: 3%;
-    }
-
-    #AproposDeMoi {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #MainApropos {
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
     #coordoner {
         margin-left: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 18px;
+        font-size: var(--fontSize-18px);
     }
 
     #EmailTxt {
         margin-top: 2px;
-        font-size: 15px;
+        font-size: var(--fontSize-15px);
         font-weight: normal;
         white-space: nowrap;
     }
@@ -285,8 +307,6 @@
 
     #coordoner p {
         margin-top: 0;
-        display: flex;
-        flex-direction: row;
     }
 
     #coordoner strong {
@@ -294,97 +314,76 @@
     }
 
     #description {
-        font-size: 16px;
+        font-size: var(--fontSize-16px);
         line-height: 1.4rem;
-    }
-
-    #MaitriseDesLanguagues #TexteBarre {
-        display: flex;
-        justify-content: space-between;
     }
 
     #TexteBarre {
         margin-bottom: 5px;
-        font-size: 0.9rem;
+        font-size: var(--fontSize-15px);
     }
 
     .barreGrise {
-        background: rgb(196, 196, 196);
+        background: var(--barreGrise-color);
         height: 10px;
         margin-bottom: 10px;
     }
 
     .barreGriseLast {
-        background: rgb(196, 196, 196);
+        background: var(--barreGrise-color);
         height: 10px;
         margin-bottom: 0px;
     }
 
     .barreOrangeHtml {
-        background: rgb(255, 172, 77);
+        background: var(--tertiere-color);
         width: 80%;
         height: 10px;
     }
 
     .barreOrangePHP {
-        background: rgb(255, 172, 77);
+        background: var(--tertiere-color);
         width: 70%;
         height: 10px;
     }
 
     .barreOrangeSQL {
-        background: rgb(255, 172, 77);
+        background: var(--tertiere-color);
         width: 50%;
         height: 10px;
     }
 
     .barreOrangeGIT {
-        background: rgb(255, 172, 77);
+        background: var(--tertiere-color);
         width: 75%;
         height: 10px;
     }
 
     .barreOrangePYTHON {
-        background: rgb(255, 172, 77);
+        background: var(--tertiere-color);
         width: 55%;
         height: 10px;
     }
 
     .barreOrangeJAVA {
-        background: rgb(255, 172, 77);
+        background: var(--tertiere-color);
         width: 50%;
         height: 10px;
     }
 
     /* MES EXPERIENCES */
-    #MesExperiences {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-
-    #MesExpGauche {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #MesFormations {
-        display: flex;
-        flex-direction: column;
-    }
-
     #MesExperiences h3 {
         font-size: 26px;
-        font-weight: 700;
+        font-weight: var(--fontWeight-700);
         color: black;
     }
 
     #MesExperiences h4 {
-        font-size: 16px;
+        font-size: var(--fontSize-16px);
         line-height: 18px;
-        font-weight: 700;
+        font-weight: var(--fontWeight-700);
         text-transform: uppercase;
-        color: #ffb727;
+        color: var(--primary-color);
         margin: 2px;
     }
 
@@ -392,7 +391,7 @@
         border-radius: 50%;
         width: 15px;
         height: 15px;
-        border: 2px solid #82909c;
+        border: 2px solid var(--elementEXp-color);
         margin-right: 7px;
     }
 
@@ -401,17 +400,17 @@
         margin-left: 0.5rem;
         margin-top: 5px;
         margin-bottom: 15px;
-        background: #82909c;
+        background: var(--elementEXp-color);
     }
 
     #CarreGris {
-        background-color: rgb(224, 224, 224);
+        background-color: var(--boxGris-color);
         padding: 0.4rem;
         text-align: center;
         margin-left: 0;
         margin-top: 15px;
         margin-bottom: 5px;
-        font-size: 15px;
+        font-size: var(--fontSize-15px);
         max-width: 90px;
     }
 
@@ -422,7 +421,7 @@
         margin-top: 5px;
         margin-bottom: 15px;
         margin-right: 20px;
-        background: #82909c;
+        background: var(--elementEXp-color);
     }
     #separation3 {
         height: 150px;
@@ -431,7 +430,7 @@
         margin-top: 5px;
         margin-bottom: 15px;
         margin-right: 20px;
-        background: #82909c;
+        background: var(--elementEXp-color);
     }
     #MesExpPro{
         padding: 0;
@@ -442,48 +441,25 @@
         margin-right: 3px;
     }
     #MesExpPro li{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         margin-top: 5px;
     }
     #CarreGrisExpPro{
-        background-color: rgb(224, 224, 224);
+        background-color: var(--boxGris-color);
         padding: 0.4rem;
         text-align: center;
         margin-left: 0;
-        font-size: 15px;
+        font-size: var(--fontSize-15px);
         max-width: 90px;
         margin-left: 5px;
     }
 
     /* MES PROJETS*/
-    #MesProjets {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-
-    #alignProjet {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    #Projects {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
     #Project {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
         margin-top: 4%;
     }
 
     #EncadrementGris {
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        box-shadow: var(--box-shadow);
         border-radius: 7%;
         width: 37.5%;
         height: 100%;
@@ -494,7 +470,7 @@
         margin: 3%;
         margin-bottom: 0;
         border-radius: 7%;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        box-shadow: var(--box-shadow);
     }
 
     #TitleProjet {
@@ -508,89 +484,70 @@
         margin-bottom: 5%;
     }
 
-    #BtnProjet {
-        display: flex;
-        justify-content: space-around;
+    .BtnProjet {
         margin: 2%;
     }
 
-    #BtnLink {
-        background-color: #ffb41f;
+    .BtnLink {
+        background-color: var(--tertiere-color);
         border-radius: 8%;
         min-height: 40px;
         width: 30%;
-        display: flex;
-        justify-content: center;
         text-decoration: none;
         white-space: nowrap;
     }
 
-    #BtnLink2 {
-        background-color: #ffb41f;
+    .BtnLink2 {
+        background-color: var(--tertiere-color);
         border-radius: 8%;
         min-height: 40px;
         width: 25%;
-        display: flex;
-        justify-content: center;
         text-decoration: none;
         white-space: nowrap;
     }
 
-    #BtnLink2:hover {
+    #BtnLink2:hover, #BtnLink:hover{
         border-radius: 14%;
-        background-color: #ffb41fa9;
+        background-color: var(--primary-backgroundColor);
     }
 
-    #BtnSite {
+    #BtnSite{
         background-color: transparent;
-        color: white;
-        font-size: 1.2rem;
+        color: var(--secondary-color);
+        font-size: var(--fontSize-18px);
         border: none;
-
-    }
-
-    #BtnLink:hover {
-        border-radius: 14%;
-        background-color: #ffb41fa9;
+        width: 100%;
     }
 
     .BtnEnS {
-        background-color: #ffe9bcc2;
-        border: 2px solid #ffb41f;
+        background-color: var(--primaryClaire-color);
+        border: 2px solid var(--tertiere-color);
         min-height: 40px;
         width: 45%;
     }
 
     .BtnEnS a {
         text-decoration: none;
-        color: #ffb41f;
-        font-size: 1rem;
+        color: var(--tertiere-color);
+        font-size: var(--fontSize-18px);
     }
 
-    .BtnEnS:hover {
-        background-color: #ffe7b777;
+    .BtnEnS:hover, .BtnEnS2:hover, #BtnSite:hover{
+        transition: all 0.5s ease-in-out;
+        background-color: var(--btnHover-color);
     }
 
     .BtnEnS2 {
-        background-color: #ffe9bcc2;
-        color: #ffb41f;
-        font-size: 1rem;
-        border: 2px solid #ffb41f;
+        background-color: var(--primaryClaire-color);
+        color: var(--tertiere-color);
+        font-size: var(--fontSize-16px);
+        border: 2px solid var(--tertiere-color);
         min-height: 40px;
         width: 35%
     }
 
-    .BtnEnS2:hover {
-        background-color: #ffe7b777;
-    }
-
     /* CONTACTEZ-MOI */
     #BlockContact {
-        margin-left: 20%;
-        margin-right: 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         margin-bottom: 5%;
     }
 
@@ -600,42 +557,37 @@
     }
 
     #CarreBlanc {
-        background-color: white;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        background-color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
         width: 100%;
         margin-bottom: 6%;
     }
 
     #CarreBlanc2 {
-        background-color: white;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        background-color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
         width: 47%;
     }
 
     #CarreBlanc3 {
-        background-color: white;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        background-color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
         width: 100%;
-
     }
 
-
-    #alignBox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #444444;
+    .alignBox {
+        color: var(--elementEXp-color);
     }
 
     #BlockContact h5 {
-        font-size: 18px;
+        font-size: var(--fontSize-18px);
         margin-top: 0;
         margin-bottom: 0;
-        color: #727272;
+        /*color: var(--grey-color);*/
     }
 
     #BlockContact p {
-        font-size: 16px;
+        font-size: var(--fontSize-16px);
     }
 
     #BlockContact img {
@@ -644,66 +596,50 @@
 
     #ImgContact {
         padding: 2%;
-        background-color: #ffe9bcc2;
+        background-color: var(--primaryClaire-color);
         width: auto;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
         margin: 3%;
     }
 
-    #ImgContact2 {
+    .ImgContact2 {
         padding: 4%;
         margin: 6%;
-        background-color: #ffe9bcc2;
+        background-color: var(--primaryClaire-color);
         width: auto;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
     }
 
     #LogoReseau {
         width: 40%;
         margin: 3%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
 
-    #Logo {
+    .Logo {
         padding: 4.5%;
-        border: 1px solid #dde1e4;
+        border: 1px solid var(--boxGris-color);
         border-radius: 50%;
-        background-color: #ffffff;
-        display: flex;
-        justify-content: center;
+        background-color: var(--secondary-color);
     }
 
-    #Logo:hover {
-        background-color: #ffb41f;
+    .Logo:hover {
+        transition: all 1s ease-in-out;
+        background-color: var(--tertiere-color);
     }
 
-    #Logo a {
-        display: flex;
-        justify-content: center;
+    .Logo a {
         width: 100%;
     }
 
-    #Logo img {
-    }
+   /* #Logo img {
+    }*/
 
     /* Contactez-Moi Formulaire*/
-    form {
+    .form {
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
-
     #Formulaire {
-        display: flex;
-        flex-direction: column;
         margin: 2%;
     }
 
@@ -718,10 +654,10 @@
     }
 
     #fname {
-        color: #6d6d6d;
-        border-color: #bbbbbbde;
+        color: var(--grey-color);
+        border-color: var(--grey-color);
         border-width: 0.9px;
-        font-size: 15px;
+        font-size: var(--fontSize-15px);
     }
 
     #Formulaire textarea {
@@ -729,14 +665,9 @@
         margin: 1%;
     }
 
-    #BtnFormu {
-        display: flex;
-        justify-content: center;
-    }
-
     #BtnEnvoyer {
-        background-color: #ffb41f;
-        color: white;
+        background-color: var(--tertiere-color);
+        color: var(--secondary-color);
         font-size: 17px;
         border-color: transparent;
         border-radius: 8%;
@@ -745,20 +676,9 @@
     }
 
     #BtnEnvoyer:hover {
+        transition: all 1s ease-in-out;
         border-radius: 13%;
-        background-color: #ffc551;
-    }
-
-    /* FONCTION CSS*/
-    .DisplayFlexDirectionRow {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .DisplayFlexDirectionRowBetween {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        background-color: var(--primary-color);
     }
 
     /* Scroll Top */
@@ -773,16 +693,12 @@
         z-index: 2;
     }
 
-    #scroll_to_top img {
-        width: 50px;
-    }
-
-    #scroll_to_bottom {
+    #scroll_to_top img, #scroll_to_bottom {
         width: 50px;
     }
 
     /* TXT box hidden */
-    #exemple {
+    #exemple, #exemple2, #exemple3, #exemple4{
         visibility: hidden;
         width: auto;
         height: 100%;
@@ -794,85 +710,47 @@
         position: absolute;
         width: 350px;
         height: cover;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        background-color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
         border-radius: 8%;
         padding: 15px;
         text-align: center;
-        font-size: 16px;
+        font-size: var(--fontSize-16px);
         line-height: 140%;
         left: 3%;
     }
 
-    #exemple2 {
-        visibility: hidden;
-        width: auto;
-        height: 100%;
-        text-align: center;
-        z-index: 2;
-    }
-
-    #exemple2 div {
+    #exemple2 div, #exemple4 div{
         position: absolute;
         width: 350px;
         height: cover;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        background-color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
         border-radius: 8%;
         padding: 15px;
         text-align: center;
-        font-size: 15px;
+        font-size: var(--fontSize-15px);
         line-height: 140%;
         right: 3%;
-    }
-
-    #exemple3 {
-        visibility: hidden;
-        width: auto;
-        height: 100%;
-        text-align: center;
-        z-index: 2;
     }
 
     #exemple3 div {
         position: absolute;
         width: 350px;
         height: cover;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+        background-color: var(--secondary-color);
+        box-shadow: var(--box-shadow);
         border-radius: 8%;
         padding: 15px;
         text-align: center;
-        font-size: 15px;
+        font-size: var(--fontSize-15px);
         line-height: 140%;
         margin-top: 2.5%;
         left: 3%;
     }
 
-    #exemple4 {
-        visibility: hidden;
-        width: auto;
-        height: 100%;
-        text-align: center;
-        z-index: 2;
-    }
-
-    #exemple4 div {
-        position: absolute;
-        width: 350px;
-        height: cover;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
-        border-radius: 8%;
-        padding: 15px;
-        text-align: center;
-        font-size: 15px;
-        line-height: 140%;
-        right: 3%;
-    }
-
     #ExempleDate{
-        color: #ffb41f;
+        color: var(--tertiere-color);
     }
 
 
@@ -880,370 +758,580 @@
     #footer {
         background-image: url('../images/footer.png');
         background-size: cover;
-        color: white;
+        color: var(--secondary-color);
         height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         position: absolute;
         width: 100%;
     }
 
     #footer h3 {
-        font-family: "Satisfy", serif;
+        font-family: var(--fontFamily-sousTitle);
         font-size: 40px;
     }
 
-/* RESPONSIVE */
-
-/* Petit ecran de pc */
-@media screen and (min-width:1024px) and (max-width:1600px){
-/* NAV */
-    nav #MainNav a{
-        color: white!important;
+/* NEW RESPONSIVE ******************************/
+/* Grand ecran 4k+ */
+@media only screen and (min-width: 2560px){
+    #Apropos, #MesExperiences, #MesProjets, #ContactezMoi {
+        margin-left: 15%;
+        margin-right: 15%;
     }
-/*MES EXPERIENCES */
-    #listeDiplome{
-        font-size: 14px;
+    /* NAVBAR */
+    #MainNav a, .txtsmartphone{
+        font-size: 1.6rem;
     }
-    #MesExpPro{
-        font-size: 14px;
+    #us:before, #fr:before{
+        margin-top: 10px;
     }
-    #BtnSite{
-        font-size: 18px;
+    /* ACCEUIL */
+    #sous-header h1{
+        font-size: 140px;
     }
-
-/* POP-UP mes projet*/
-    #exemple div{
-        width: 300px;
-        left: 2%;
+    #sous-header h2{
+        font-size: 40px;
+        margin-top: 5px;
     }
-    #exemple2 div{
-        width: 300px;
-        right: 2%;
-    }
-    #exemple3 div{
-        width: 300px;
-        left: 2%;
-    }
-    #exemple4 div{
-        width: 300px;
-        right: 2%;
-    }
-/* CONTEZ-MOI */
-    #BlockContact img {
-        max-width: 25px;
-        margin-top: 9px;
-        margin-bottom: 9px;
-    }
-}
-
-/* ecran taille tablette */
-@media screen and (min-width:780px) and (max-width:1080px) {
-/* NAV */
-    #nav {
-        justify-content: space-between;
-    }
-    nav #MainNav a{
-        color: white!important;
-    }
-/* A PROPOS */
-    #Apropos {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #MesTitles{
-        top: 70px;
-        margin-bottom: 80px;
-    }
-    #ImgDeProfil {
-        height: 500px;
-        margin-right: 2%;
-    }
-    #coordoner img {
-        width: 20px;
-    }
-    #coordoner strong {
-        margin-right: 5px;
-    }
-    #EmailTxt {
-        margin-top: 2px;
-        font-size: 13px;
-    }
-    #TitleCoord {
-        font-size: 15px;
-    }
-    #description {
-    font-size: 13px;
-    line-height: 1.1rem;
-    }
-    #TexteBarre{
-        font-size: 0.7REM;
-    }
-    .barreGrise{
-        margin-bottom: 5PX;
-    }
-    /* Mes Experiences */
-    #MesExperiences{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #MesExperiences h3{
-        font-size: 24px;
-    }
-    #MesExperiences h4{
-        font-size: 16px;
-    }
-    #separation2{
-        height: 155px;
-    }
-/* Mes Projets */
-    #MesProjets{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #exemple div{
-        width: 300px;
-        left: 11.5%;
-    }
-    #exemple2 div{
-        width: 300px;
-        right: 11.5%;
-    }
-    #exemple3 div{
-        width: 300px;
-        left: 11.5%;
-        margin-top: 4%;
-    }
-    #exemple4 div{
-        width: 300px;
-        right: 11.5%;
-    }
-/* Contactez-moi */
-    #BlockContact{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #BtnEnvoyer{
-        width: auto;
-    }
-}
-
-
-/* smartphone */
-@media screen and (max-width:767px){
-/* Mes Titre */
-    #MesTitles{
-        top: 70px;
-        margin-bottom: 60px;
+    /* MES TITRE */
+    #MesTitles span{
+        font-size: 90px;
     }
     #MesTitles h2{
-        font-size: 28px;
+        font-size: 80px;
+        margin-top: 0;
     }
-    #MesTitles span{
-        font-size: 38px;
+    /* A PROPOS */
+    #ImgDeProfil{
+        height: 850px;
     }
-/* NAV */
-    nav #MainNav{
-        display: none;
-        flex-direction: column;
+    #description{
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+    #TexteBarre{
+        font-size: 1.5rem;
+    }
+    .barreOrangeHtml,.barreOrangePHP ,.barreOrangeSQL , .barreOrangeGIT, .barreOrangePYTHON, .barreOrangeJAVA, .barreGrise, .barreGriseLast{
+        height: 15px;
+    }
+    #coordoner1, #coordoner2, #EmailTxt{
+        margin-top: 0;
+        font-size: 1.7rem;
+    }
+    #coordoner1 img, #coordoner2 img{
+        width: 50px;
+    }
+    /* MES EXPERIENCES */
+    #MesExperiences h3{
+        font-size: 4rem;
+    }
+    #MesExperiences h4{
+        font-size: 2.2rem;
+    }
+    #MesExperiences ul, #listeDiplome{
+        font-size: 1.8rem;
+    }
+    #CarreGris, #CarreGrisExpPro{
+        font-size: 1.8rem;
+        max-width: fit-content;
+        padding: 0.8rem;
+    }
+    #separation3, #separation2{
+        height: 290px;
+    }
+    /* MES PROJET */
+    #TitleProjet{
+        font-size: 2.2rem;
+    }
+    #BtnSite, .BtnEnS2, .BtnEnS a{
+        font-size: 1.8rem;
+    }
+    .BtnLink2, .BtnLink{
+        min-height: 60px;
+    }
+    #exemple2 div, #exemple4 div, #exemple div, #exemple3 div {
+        height: fit-content;
+        font-size: 1.6rem;
+        width: 500px;
+        line-height: 120%;
+    }
+    #ExempleDate{
+        font-size: 1.3rem;
+    }
+    /* CONTACT */
+    #BlockContact img {
+        max-width: 60px;
+    }
+    #BlockContact h5{
+        font-size: 2.2rem;
+    }
+    #BlockContact p{
+       font-size: 1.8rem;
+    }
+    #Formulaire input {
+        height: 100px;
+        font-size: 1.8rem;
+    }
+    #BtnEnvoyer{
+        width: 25%;
+        height: 80px!important;
+    }
+    #message{
         height: 200px;
+        font-size: 1.8rem;
+        border:solid 1px black;
+    }
+    /* FOOTER */
+    #footer h3 {
+        font-size: 120px;
+        font-weight: var(--fontWeight-200);
+        margin-bottom: 2%;
+    }
+    .copyright{
+        font-size: 30px;
+        font-weight: var(--fontWeight-500);
+    }
+    /* */
+    #scroll_to_top img{
+        width: 100px;
+    }
+    #scroll_to_top{
+        width: auto;
+        height: auto;
+    }
+}
 
+/* responsive pour pas faire de repetition */
+/* laptop */
+@media only screen and (max-width: 1440px){
+    #Apropos, #MesExperiences, #MesProjets, #ContactezMoi {
+        margin-left: 15%;
+        margin-right: 15%;
     }
-    nav #MainNav a{
-        white-space:nowrap;
-        font-size: 20px;
-        text-align: center;
-        color: white!important;
+}
+@media only screen and (max-width: 1024px){
+    .DisplayMobile{
+        flex-direction:column;
     }
-    #BurgerMenu 
-    {
+    #exemple div, #exemple3 div{
+        left: 1%;
+    }
+    #exemple2 div, #exemple4 div{
+        right: 1%;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 425px){
+    #BurgerMenu {
         width: 30px;
         height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 85%;
+        margin: 0 86%;
         font-size: 50px;
         color: white;
         cursor: pointer;
         z-index: 10000;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
     }
     #toggle:checked + #MainNav {
         display: flex;
     }
-    .lang-menu{
-        right: auto;
-        left: 7%;
-     }
-     .txtsmartphone{
+    nav #MainNav {
         display: none;
-     }
-     .lang-menu ul {
-        top: 40px;
-     }
-     .lang-menu ul li a {
-        padding: 3px 7px;
-     }
-     .lang-menu ul li a::before {
-        margin-right: auto;
-     }
-/* HEADER */
-    #sous-headerContainer{
-        margin-top: 25%;
-    }
-    #sous-headerContainer h1{
-        font-size: 55px;
-    }
-/* A Propos */
-    #Apropos {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #AproposDeMoi{
         flex-direction: column;
+        height: 200px;
     }
-    #Apropos {
-        margin-left: 5%;
-        margin-right: 5%;
+    nav #MainNav a {
+        white-space: nowrap;
+        font-size: 20px;
+        text-align: center;
     }
-    #ImgDeProfil{
-        height: 475px;
-        margin-right:0;
-        margin-bottom: 4.5%;
+    .lang-menu{
+        left: 5%;
+        right: auto;
+    }
+    .txtsmartphone{
+        display: none;
+    }
+    #MesTitles{
+        top: 60px;
+        margin-bottom: 30px;
     }
     #coordoner{
         flex-direction: column;
-        margin-top: 5px;
     }
-    #coordoner p{
-        margin-bottom: 5px;
-        flex-wrap: nowrap;
+    .DisplayMobileContact2{
+        flex-direction: column;
+    }
+    #separation2{
+        height: auto;
+        margin-right: 10px;
+    }
+    #separation3{
+        height: auto;
+        margin-right: 10px;
+    }
+    .DisplayProjetMobile{
+        flex-direction: column;
         align-items: center;
     }
-    #coordoner img{
-        height: 3%;
-        width: 7%;
+    #exemple2 div, #exemple4 div, #exemple div, #exemple3 div {
+        right: 15%;
+        left: 15%;
+        height: fit-content;
+        line-height: 120%;
+        width: auto;
+        padding: 10px;
     }
-    #TitleCoord{
-        font-size: 16px;
+    .hiddenMobilTxt{
+        display: none!important;
     }
-    #EmailTxt{
-        font-size: 13px;
+    #CarreBlanc, #CarreBlanc2{
+        margin-bottom: 3%;
     }
-    #description{
-        font-size: 15px;
-        line-height:1.3rem;
-        margin-top: 2px;
+    #CarreBlanc2{
+        width: 100%;
     }
-    #MaitriseDesLanguagues{
-        margin-top: 7px;
-    }
-/* MES EXPERIENCES */
-    #MesExperiences{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #MesExpGauche{
-        flex-direction: column;
-    }
-    #listeDiplome{
-        font-size: 12px;
-    }
-    #ExpPro{
-        margin-left: 20px;
-    }
-    #MesExpPro{
-        padding: 0;
-    }
-    #MesExpPro li{
-        font-size: 12px;
-        flex-wrap: nowrap;
-    }
-    #ExpPro{
-        margin-left: 0;
-    }
-    #CarreGrisExpPro{
-        font-size: 14px;
-    }
-    #hiddenMobilTxt{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-/* MES PROJET */
-    #MesProjets{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #Projects{
-        flex-direction: column;
-    }
-    #Project{
-        flex-direction: column;
-        margin-top: 0;
+    #scroll_to_top {
+        right: 30px;
+        bottom: 30px;
     }
     #EncadrementGris{
         width: auto;
         margin-bottom: 5%;
-        padding-bottom: 2%;
     }
-    #BtnSite{
-        font-size: 1rem;
+    .copyright{
+        font-size: 0.8rem;
     }
-    .BtnEnS2{
-        white-space: wrap;
-    }
-    .BtnEnS2 a{
-        font-size: 0.9rem;
-    }
-    #exemple div{
-        margin-left: 1%;
-        width: 82%;
-    }
-    #exemple2 div{
-        left: 5%;
-        width: 82%;
-    }
-    #exemple3 div{
-        left: 5%;
-        width: 82%;
-    }
-    #exemple4 div{
-        left: 5%;
-        width: 82%;
-    }
-/* CONTACTEZ-MOI */
-    #BlockContact{
-        margin-left: 5%;
-        margin-right: 5%;
+}
+
+/* TABLETTE */
+@media only screen and (max-width: 768px){
+    .DisplayMobileProjet{
         flex-direction: column;
-        margin-bottom: 0;
     }
-    #BlockContact img{
-        max-width: 25px;
-        max-height: 25px;
+    .displayMobileExperience{
+        flex-direction: column;
+    }
+    .DisplayMobileContact{
+        flex-direction: column;
     }
     #BlockContactGauche{
-        width: auto;
-        margin-bottom: 5%;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
+
+/* Laptop large */
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+    #ImgDeProfil{
+        height: 550px;
+    }
+    .imgbox{
+        margin-right: 2%;
+    }
+    #description p{
+        margin-top: 0;
+    }
+    #coordoner p{
+        margin-bottom: 0.7rem;
+    }
+}
+
+/* Laptop classique */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /* NAVBAR */
+    .lang-menu {
+        right: 5%;
+        top: 8px;
+    }
+    .selected-lang{
+        font-size: var(--fontSize-13px);
+    }
+    #MainNav{
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    /* A PROPOS */
+    .imgbox{
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+    /* Experiences */
+    #MesExperiences ul, #listeDiplome{
+        font-size: 0.7rem;
+    }
+    #CarreGris, #CarreGrisExpPro{
+        font-size: 0.7rem;
+        max-width: fit-content;
+        padding: 0.4rem;
+    }
+    #separation2{
+        height: 130px;
+    }
+    #separation3{
+        height: 120px;
+    }
+    /* PORJET */
+    #BtnSite, .BtnEnS2, .BtnEnS a, #BtnEnvoyer, .BtnLink2, .BtnLink, .BtnEnS{
+        font-size: 0.9rem;
+        width: fit-content;
+        min-height: 30px;
+    }
+    #EncadrementGris{
+        width: 40%;
+    }
+    #exemple2 div, #exemple4 div, #exemple div, #exemple3 div {
+        height: fit-content;
+        font-size: 0.8rem;
+        line-height: 120%;
+        width: 250px;
+        padding: 10px;
+    }
+    #ExempleDate{
+        font-size: 0.7rem;
+    }
+    /* CONTACT */
+    #BlockContact p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablette */
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    #MesTitles{
+        top: 80px;
+        margin-bottom: 50px;
+    }
+    /* NAVBAR */
+    .lang-menu {
+        right: 5%;
+        top: 8px;
+        line-height: 2.4;
+    }
+    .selected-lang{
+        font-size: var(--fontSize-13px);
+    }
+    #MainNav{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    /* APROPOS */
+    .imgbox{
+        margin-right: 0;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+    }
+    /* EXPERIENCE */
+    #MesExperiences h3{
+        font-size: 2rem;
+    }
+    #MesExperiences h4{
+        font-size: 1.5rem;
+    }
+    #MesExperiences ul, #listeDiplome{
+        font-size: 1rem;
+    }
+    #CarreGris, #CarreGrisExpPro{
+        font-size: 1rem;
+        width: fit-content;
+    }
+    /* PROJET */
+    #EncadrementGris{
+        width: 45%;
+    }
+    #TitleProjet h5{
+        font-size: 1rem;
+    }
+    #BtnSite, .BtnEnS2, .BtnEnS, .BtnEnS a, .BtnLink2, .BtnLink{
+        font-size: 0.7rem;
+        width: fit-content;
+        min-height: 30px;        
+    }
+    #exemple2 div, #exemple4 div, #exemple div, #exemple3 div {
+        height: fit-content;
+        font-size: 0.7rem;
+        line-height: 120%;
+        width: 200px;
+        padding: 10px;
+    }
+}
+
+/* Mobile large */
+@media only screen and (min-width: 376px) and (max-width: 425px){
+    /* HEADER */
+    #sous-header h1{
+        font-size: 54px;
+    }
+    /* A PROPOS */
+    #ImgDeProfil{
+        height: 400px;
+    }
+    #EmailTxt{
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+    #description{
+        font-size: 0.9rem;
+    }
+    /* EXPERIENCE */
+    #separation2{
+        width: 3px;
+    }
+    #MesExperiences ul, #listeDiplome{
+        font-size: 0.8rem;
+    }
+    #CarreGrisExpPro {
+        padding: 0.3rem;
+    }
+    /* PROJET */
+    #BtnSite, .BtnEnS2, .BtnEnS, .BtnEnS a, #BtnEnvoyer, .BtnLink2, .BtnLink{
+        font-size: 1rem;
+        width: fit-content;
+        min-height: 40px;        
+    }
+    /* CONTACT */
+    /* FOOTER */
+}
+
+/* Mobile classique */
+@media only screen and (min-width: 321px) and (max-width: 375px){
+    #MesTitles span{
+        font-size: 1.8rem;
+    }
+    #MesTitles h2{
+        font-size: 1.6rem;
+    }
+    /* HEADER */
+    #sous-header h1{
+        font-size: 50px;
+    }
+    /* A PROPOS */
+    #ImgDeProfil{
+        height: 350px;
+    }
+    #EmailTxt{
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    #description{
+        font-size: 0.9rem;
+    }
+    /* EXPERIENCE */
+    #MesExperiences ul, #listeDiplome{
+        font-size: 0.7rem;
+    }
+    #CarreGrisExpPro {
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+    /* PROJET */
+    #BtnSite, .BtnEnS2, .BtnEnS, .BtnEnS a, .BtnLink2, .BtnLink{
+        font-size: 0.8rem;
+        width: fit-content;
+        min-height: 30px;       
+    }
+    #exemple2 div, #exemple4 div, #exemple div, #exemple3 div {
+        font-size: 0.8rem;
+    }
+    /* CONTACT */
+    #ImgContact{
+        padding: 4%;
+        margin: 6%;
+    }
+    .Logo{
+        padding: 8%;
     }
     #BtnEnvoyer{
-        width: auto;
+        font-size: 1rem;
+        width: fit-content;
+        min-height: 40px;
+    }
+    /* FOOTER */
+}
+
+/* Mobile slim */
+@media only screen and (max-width: 320px){
+    #MesTitles span{
+        font-size: 1.7rem;
+    }
+    #MesTitles h2{
+        font-size: 1.5rem;
+    }
+    /* HEADER */
+    #sous-header h1{
+        font-size: 40px;
+    }
+    /* A PROPOS */
+    .DisplayMobile{
+        margin-bottom: 2%;
+    }
+    #ImgDeProfil{
+        height: 300px;
+    }
+    #coordoner img {
+        width: 25px;
+    }
+    #coordoner p{
+        margin-bottom: 1%;
+    }
+    #TitleCoord{
+        font-size: 0.7rem;
+        margin-top: 4px;
+    }
+    #EmailTxt{
+        font-size: 0.6rem;
+        margin-top: 6px;
+    }
+    #description{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    /* EXPERIENCE */
+    #MesExperiences ul, #listeDiplome{
+        font-size: 0.6rem;
+    }
+    #CarreGrisExpPro {
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+    /* PROJET */
+    #BtnSite, .BtnEnS2, .BtnEnS, .BtnEnS a, .BtnLink2, .BtnLink{
+        font-size: 0.7rem;
+        width: fit-content;
+        min-height: 25px;       
+    }
+    #TitleProjet{
+        font-size:1rem;
+    }
+    #exemple2 div, #exemple4 div, #exemple div, #exemple3 div {
+        font-size: 0.7rem;
+    }
+    /* CONTACT */
+    #ImgContact{
+        padding: 4%;
+        margin: 6%;
     }
     #LogoReseau{
         width: 60%;
     }
-    #BlockContact p{
-        font-size: 12px;
+    .Logo{
+        padding: 6%;
     }
-/* FOOTER */
-    .copyright{
-        font-size: 14px;
+    #BtnEnvoyer{
+        font-size: 1rem;
+        width: fit-content;
+        min-height: 40px;
     }
+    #fname, #message, #BlockContact p{
+        font-size: 0.8rem;
+    }
+    /* FOOTER */
 }
-

@@ -7,6 +7,10 @@
 
     <title>Raphael Petrozzi</title>
 
+    <meta name="author" content="Raphael Petrozzi" />
+    <meta name="description" content="Vous retrouverez ici le condensé de ma vie professionnelle de développeur full stack, mes expériences, mes projets, mes informations personnelles et un formulaire pour me contacter directement." />
+    <link rel="icon" href="images/Raphael-petrozzi-Detourer.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
 </head>
@@ -18,19 +22,19 @@
             <nav id="nav">
                 <label for="toggle" id="BurgerMenu">☰</label>
                 <input type="checkbox" id="toggle">               
-                <div id="MainNav">
+                <div id="MainNav" class="DisplayFlexDirectionRowEvenly">
                     <a href="#headerIMG" id="NavAcceuil">Accueil</a>
                     <a href="#Apropos" id="NavApropos">A propos</a>
                     <a href="#MesExperiences" id="NavExperience">Experiences</a>
                     <a href="#MesProjets" id="NavProjet">Mes projets</a>
                     <a href="#ContactezMoi" id="NavContact">Contact</a>
                     <div class="lang-menu">
-                    <div class="selected-lang" id="fr">
+                    <div class="selected-lang DisplayFlexDirectionRowBetween" id="fr">
                        <div class="txtsmartphone"> Français</div>
                     </div>
                     <ul>
-                        <li>
-                            <a href="indexENG.php" id="us"><div class="txtsmartphone">English</div></a>
+                        <li class="DisplayFlexDirectionRowBetween">
+                            <a href="indexENG.php" id="us" class="DisplayFlexDirectionRowBetween"><div class="txtsmartphone">English</div></a>
                         </li>
                     </ul>
                 </div>
@@ -41,10 +45,10 @@
 
         <!-- SOUS-HEADER -->
         <section id="sous-header">
-            <div id="sous-headerContainer">
+            <div class="DisplayFlexDirectionColumnAlignCenter">
                 <h1>Raphael Petrozzi</h1>
                 <h2>TECHNICIEN DEVELOPPEUR WEB</h2>
-                <a href="#Apropos"><img src="images/ScrollBottom.png" id="scroll_to_bottom" /></a>
+                <a href="#Apropos"><img loading="lazy" src="images/ScrollBottom.png" id="scroll_to_bottom" alt="logo scroll botom"/></a>
             </div>
         </section>
     </section>
@@ -61,26 +65,29 @@
             </div>
 
             <!-- IMAGE DE PROFIL -->
-            <div id="AproposDeMoi">
-                <img id="ImgDeProfil" src="images/me.jpg"></img>
-
-                <!-- TEXT A PROPOS -->
-                <div id="MainApropos">
-                    <!-- COORDONER -->
-                    <div id="coordoner">
-                        <div id="coordoner1">
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Nom:</strong> <strong id="EmailTxt">Raphael
-                                    Petrozzi</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Tel:</strong> <strong id="EmailTxt">07 83 57 89 64</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Ville:</strong> <strong id="EmailTxt">Chambéry</strong></p>
-                        </div>
-                        <div id="coordoner2">
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Age:</strong> <strong id="EmailTxt">23</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Mail:</strong> <strong id="EmailTxt">raphael.petrozzi@le-campus-numerique.fr</strong></p>
-                            <p><img src="images/FlecheDroiteOr.png" /><strong id="TitleCoord">Adresse:</strong> <strong id="EmailTxt">39
-                                    rue du bon pasteur</strong></p>
-                        </div>
+            <div class="DisplayFlexDirectionRow DisplayMobile">
+                <!-- <div class="DisplayFlexDirectionRow"> -->
+                    <div class="imgbox">
+                        <img loading="lazy" id="ImgDeProfil" src="images/Raphaël-PETROZZI-pasflou.JPG" alt="photo de profil"></img>
                     </div>
+
+                    <!-- TEXT A PROPOS -->
+                    <div class="DisplayFlexDirectionColumnBetween">
+                        <!-- COORDONER -->
+                        <div id="coordoner" class="DisplayFlexDirectionRowBetween">
+                            <div id="coordoner1">
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Nom:</strong> <strong id="EmailTxt">Raphael
+                                        Petrozzi</strong></p>
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Tel:</strong> <strong id="EmailTxt">07 83 57 89 64</strong></p>
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Ville:</strong> <strong id="EmailTxt">Chambéry</strong></p>
+                            </div>
+                            <div id="coordoner2">
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Age:</strong> <strong id="EmailTxt">23</strong></p>
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Mail:</strong> <strong id="EmailTxt">raphael.petrozzi@le-campus-numerique.fr</strong></p>
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Adresse:</strong> <strong id="EmailTxt">39 rue du bon pasteur</strong></p>
+                            </div>
+                        </div>
+                <!-- </div> -->
                     <!-- TEXTE MISE EN AVANT -->
                     <div id="description">
                         <p>Développeur junior depuis décembre 2022, suite à une formation équivalent bac +2
@@ -129,9 +136,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-
             </div>
         </section>
 
@@ -143,9 +147,9 @@
             </div>
 
             <!-- PARTIE GAUCHE -->
-            <div id="MesExpGauche">
+            <div class="DisplayFlexDirectionRowBetween displayMobileExperience">
                 <!-- FORMATION -->
-                <div id="MesFormations">
+                <div class="DisplayFlexDirectionColumn">
                     <h3>Formation</h3>
                     <!-- NIVEAU EN LANGUES -->
                     <div class="DisplayFlexDirectionRow">
@@ -210,7 +214,7 @@
                             <ul id="MesExpPro">
                                 <li><strong>Développeur web</strong> chez MUB<div id="CarreGrisExpPro">2021-2022</div></li>
                                 <li>Différentes missions d'<strong>intérim</strong><div id="CarreGrisExpPro">2020-2021</div></li>
-                                <li><strong>Employer polyvalent</strong><div id="hiddenMobilTxt">pour des grandes chaînes</div><div id="CarreGrisExpPro">2019-2020</div></li>                        
+                                <li class="hiddenMobilTxt"><strong>Employer polyvalent</strong><div>pour des grandes chaînes</div><div id="CarreGrisExpPro">2019-2020</div></li>                        
                                 <li><strong>Arbitre officiel</strong> de basket-ball<div id="CarreGrisExpPro">2015-2017</div></li>
                                 
 
@@ -260,7 +264,7 @@
                 <h2>Mes Projets</h2>
             </div>
 
-            <div id="alignProjet">
+            <div class="DisplayFlexDirectionColumnBetween">
             <!-- Boite de dialogue -->
             <div id="exemple">
                 <div>
@@ -271,15 +275,15 @@
                     <strong id="ExempleDate">Décembre 2021 - Décembre 2022</strong>
                 </div>
             </div>
-                <div id="Projects">
+                <div class="DisplayFlexDirectionRowEvenly DisplayProjetMobile">
                     <div id="EncadrementGris">
-                        <img src="images/MUB.jpg" />
+                        <img loading="lazy" src="images/MUB.jpg" alt="image entreprise mub"/>
                         <div id="TitleProjet">
                             <h5>MUB - My utylity bag</h5>
                         </div>
-                        <div id="BtnProjet">
+                        <div class="BtnProjet">
                             <button class="BtnEnS" id="BtnCallEvent1"><a>En savoir plus</a></button>
-                            <a id="BtnLink" href="https://www.myutilitybag.com/" target="_blank"><button id="BtnSite">Site
+                            <a class="BtnLink DisplayFlexDirectionRowCenter" href="https://www.myutilitybag.com/" target="_blank"><button id="BtnSite">Site
                                     Web</button></a>
                         </div>
                     </div>
@@ -293,13 +297,13 @@
                         </div>
                     </div>
                     <div id="EncadrementGris">
-                        <img src="images/Portefolio.jpg">
+                        <img loading="lazy" src="images/Portefolio.jpg" alt="image de portefolio">
                         <div id="TitleProjet">
                             <h5>Portefolio</h5>
                         </div>
-                        <div id="BtnProjet">
-                            <a id="BtnLink2" href="#headerIMG"><button id="BtnSite">Site Web</button></a>
-                            <a id="BtnLink2" href="https://github.com/donpoulp/Portefolio" target="_blank"><button id="BtnSite">GitHub</button></a>
+                        <div class="BtnProjet">
+                            <a class="BtnLink2" href="#headerIMG"><button id="BtnSite">Site Web</button></a>
+                            <a class="BtnLink2" href="https://github.com/donpoulp/Portefolio" target="_blank"><button id="BtnSite">GitHub</button></a>
                             <button class="BtnEnS2" id="BtnCallEvent2"><a>En savoir plus</a></button>
                         </div>
                     </div>
@@ -315,16 +319,16 @@
                         </div>
                     </div>
 
-                <div id="Project">
+                <div id="Project" class="DisplayFlexDirectionRowEvenly DisplayProjetMobile">
                     <div id="EncadrementGris">
-                        <img src="images/Spacetrip.jpg">
+                        <img loading="lazy" src="images/Spacetrip.jpg" alt="image de mon projet spacetrip">
                         <div id="TitleProjet">
                             <h5>SpaceTrip</h5>
                         </div>
-                        <div id="BtnProjet">
+                        <div class="BtnProjet">
                             <button class="BtnEnS2" id="BtnCallEvent3"><a>En savoir plus</a></button>
-                            <a id="BtnLink2" href=""><button id="BtnSite" target="_blank">Site Web</button></a>
-                            <a id="BtnLink2" href="https://github.com/donpoulp/modulePHPsiteSP" target="_blank"><button id="BtnSite">GitHub</button></a>
+                            <a class="BtnLink2" href=""><button id="BtnSite" target="_blank">Site Web</button></a>
+                            <a class="BtnLink2" href="https://github.com/donpoulp/modulePHPsiteSP" target="_blank"><button id="BtnSite">GitHub</button></a>
                         </div>
                     </div>
                     <div id="exemple4">
@@ -338,13 +342,13 @@
                         </div>
                     </div>
                     <div id="EncadrementGris">
-                        <img src="images/Waven-1.jpg">
+                        <img loading="lazy" src="images/Waven-1.jpg" alt="image du jeu waven">
                         <div id="TitleProjet">
                             <h5>Fansite - Waven</h5>
                         </div>
-                        <div id="BtnProjet">
-                            <a id="BtnLink2" href="https://www.figma.com/file/7WYczvh5NXvVqQRF5Fi0kE/Waven-Deckbuilder?node-id=79%3A227&t=65xbFDjRAg4CQvPT-0" target="_blank"><button id="BtnSite">Site Web</button></a>
-                            <a id="BtnLink2" href="https://github.com/Thomas-Villegas/Waven_book" target="_blank"><button id="BtnSite">GitHub</button></a>
+                        <div class="BtnProjet">
+                            <a class="BtnLink2" href="https://www.figma.com/file/7WYczvh5NXvVqQRF5Fi0kE/Waven-Deckbuilder?node-id=79%3A227&t=65xbFDjRAg4CQvPT-0" target="_blank"><button id="BtnSite">Site Web</button></a>
+                            <a class="BtnLink2" href="https://github.com/Thomas-Villegas/Waven_book" target="_blank"><button id="BtnSite">GitHub</button></a>
                             <button class="BtnEnS2" id="BtnCallEvent4"><a>En savoir plus</a></button>
                         </div>
                     </div>
@@ -361,31 +365,31 @@
             </div>
 
             <!-- BOX -->
-            <div id="BlockContact">
+            <div id="BlockContact" class="DisplayFlexDirectionRowBetween DisplayMobileContact">
                 <div id="BlockContactGauche">
                     <!-- RESEAUX SOCIALS -->
                     <div id="CarreBlanc">
-                        <div id="alignBox">
-                            <div id="ImgContact">
-                                <img src="images/Link.png" />
+                        <div class="alignBox">
+                            <div id="ImgContact" class="DisplayFlexDirectionRowCenter">
+                                <img loading="lazy" src="images/Link.png" alt="logo de liens"/>
                             </div>
                             <h5>Réseaux Sociaux</h5>
-                            <div id="LogoReseau">
-                                <div id="Logo">
-                                    <a href="https://www.linkedin.com/in/raphael-petrozzi/"><img src="images/linkedin.png" /></a>
+                            <div id="LogoReseau" class="DisplayFlexDirectionRowEvenly">
+                                <div class="Logo">
+                                    <a href="https://www.linkedin.com/in/raphael-petrozzi/"><img loading="lazy" src="images/linkedin.png" alt="image logo de linkedin"/></a>
                                 </div>
-                                <div id="Logo">
-                                    <a href="https://github.com/donpoulp"><img src="images/Github.png" /></a>
+                                <div class="Logo">
+                                    <a href="https://github.com/donpoulp"><img loading="lazy" src="images/Github.png" alt="logo github"/></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="DisplayFlexDirectionRowBetween">
+                    <div class="DisplayFlexDirectionRowBetween DisplayMobileContact2">
                         <!-- MON MAIL -->
                         <div id="CarreBlanc2">
-                            <div id="alignBox">
-                                <div id="ImgContact2">
-                                    <img src="images/Message.png" />
+                            <div class="alignBox">
+                                <div class="ImgContact2">
+                                    <img loading="lazy" src="images/Message.png" alt="logo message"/>
                                 </div>
                                 <h5>Mon Mail</h5>
                                 <p>leraphistoleur@gmail.com</p>
@@ -393,9 +397,9 @@
                         </div>
                         <!-- TELEPHONE -->
                         <div id="CarreBlanc2">
-                            <div id="alignBox">
-                                <div id="ImgContact2">
-                                    <img src="images/Phone.png" />
+                            <div class="alignBox">
+                                <div class="ImgContact2">
+                                    <img loading="lazy" src="images/Phone.png" alt="logo de telephone"/>
                                 </div>
                                 <h5>Mon Téléphone</h5>
                                 <p>07 83 57 89 64</p>
@@ -406,15 +410,15 @@
 
                 <!-- FORMULAIRE DE CONTACT -->
                 <div id="BlockContactGauche">
-                    <form method="post" action="mail.php" id="CarreBlanc3">
-                        <div id="Formulaire">
+                    <form method="post" action="mail.php" id="CarreBlanc3" class="form DisplayFlexDirectionColumnEvenly">
+                        <div id="Formulaire" class="DisplayFlexDirectionColumn">
                             <div class="DisplayFlexDirectionRowBetween" id="FormulaireTop">
                                 <input type="text" id="fname" name="nom" placeholder="Votre nom" required>
                                 <input type="mail" id="fname" name="mail" placeholder="Votre mail" required>
                             </div>
                             <input type="text" id="fname" name="sujet" placeholder="Sujet" required>
                             <textarea name="message" rows="8" id="message" placeholder="Message" required></textarea>
-                            <div id="BtnFormu">
+                            <div class="DisplayFlexDirectionRowCenter">
                                 <input type="submit" placeholder="Envoyer" id="BtnEnvoyer">
                             </div>
                         </div>
@@ -424,13 +428,13 @@
 
         </section>
         <div id="scroll_to_top">
-            <a href="#headerIMG"><img src="images/ScrollTop.png" alt="Retourner en haut" /></a>
+            <a href="#headerIMG"><img loading="lazy" src="images/ScrollTop.png" alt="Retourner en haut" /></a>
         </div>
 
 
     </main>
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer id="footer" class="DisplayFlexDirectionColumnCenter DisplayFlexDirectionColumnAlignCenter">
         <h3>Raphaël Petrozzi</h3>
 
         <div class="copyright">
