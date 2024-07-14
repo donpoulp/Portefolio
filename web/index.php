@@ -18,7 +18,7 @@
 <body>
     <!-- HEADER -->
     <section id="headerIMG">
-        <header id="header">
+    <header id="header">
             <nav id="nav">
                 <label for="toggle" id="BurgerMenu">☰</label>
                 <input type="checkbox" id="toggle">               
@@ -74,7 +74,7 @@
                     <!-- TEXT A PROPOS -->
                     <div class="DisplayFlexDirectionColumnBetween">
                         <!-- COORDONER -->
-                        <div id="coordoner" class="DisplayFlexDirectionRowBetween">
+                        <div id="coordoner" class="DisplayFlexDirectionRowBetween CoordoneLaptop">
                             <div id="coordoner1">
                                 <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Nom:</strong> <strong id="EmailTxt">Raphael
                                         Petrozzi</strong></p>
@@ -82,20 +82,24 @@
                                 <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Ville:</strong> <strong id="EmailTxt">Chambéry</strong></p>
                             </div>
                             <div id="coordoner2">
-                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Age:</strong> <strong id="EmailTxt">23</strong></p>
-                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Mail:</strong> <strong id="EmailTxt">raphael.petrozzi@le-campus-numerique.fr</strong></p>
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Age:</strong> <strong id="EmailTxt">28/12/1999</strong></p>
+                                <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Mail:</strong> <strong id="EmailTxt">raphael.petrozzi@gmail.com</strong></p>
                                 <p><img loading="lazy" src="images/FlecheDroiteOr.png" alt="image fleche vers la droite orange"/><strong id="TitleCoord">Adresse:</strong> <strong id="EmailTxt">39 rue du bon pasteur</strong></p>
                             </div>
                         </div>
                 <!-- </div> -->
                     <!-- TEXTE MISE EN AVANT -->
                     <div id="description">
-                        <p>Développeur junior depuis décembre 2022, suite à une formation équivalent bac +2
-                            de développeur web fullstack "en alternance".<br> Je souhaite continuer à me former
-                            dans ce domaine en débutant une licence de Concepteur développeur d'applications en
-                            Septembre 2023. Je cherche à m'exercer au sein d'équipes ou d'entreprises qui travaillent
-                            sur des projets de développement web. En attendant je me perfectionne au travers de projets tel que ce Portefolio
-                            fait sans aucun Framework.</p>
+                        <p>Jeune, passionné par le code, après un premier parcours de formation,
+                             je suis actuellement enthousiasmé par l’opportunité qu’il m’a été 
+                             donné d’entrer sur cette formation de Concepteur Développeur 
+                             d'Applications.<br><br> Naturellement curieux, j'aime résoudre les problèmes
+                              et je m'adapte facilement à différents environnements de travail et
+                               j’aime à travailler en équipe. Je recherche une alternance pour 
+                               parfaire mes compétences, acquérir davantage d'expérience et améliorer
+                                rapidement mon efficacité.<br><br>En dehors de mes projets professionnels, 
+                                je suis passionné de basket-ball et de voyages, mais avant de repartir,
+                                 je suis prêt à relever de nouveaux défis à vos côtés.</p>
                     </div>
                     <!-- PROGRESS BARRE DE MAITRISE DES LANGUAGUES -->
                     <div id="MaitriseDesLanguagues">
@@ -191,6 +195,8 @@
                     <div class="DisplayFlexDirectionRow">
                         <div id="separation2"> </div>
                         <div id="ListesDiplomes">
+                            <div id="CarreGris">2024-2026 (en cours)</div>
+                            <div id="listeDiplome">Formation concepteurt développeur d'applications<br> Campus Numerique in the Alpes</div>
                             <div id="CarreGris">2021-2022</div>
                             <div id="listeDiplome">Formation développeur web Campus Numérique in the Alpes</div>
                             <div id="CarreGris">2017-2018</div>
@@ -392,7 +398,7 @@
                                     <img loading="lazy" src="images/Message.png" alt="logo message"/>
                                 </div>
                                 <h5>Mon Mail</h5>
-                                <p>leraphistoleur@gmail.com</p>
+                                <p>raphael.petrozzi@gmail.com</p>
                             </div>
                         </div>
                         <!-- TELEPHONE -->

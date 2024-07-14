@@ -139,7 +139,7 @@
                 });
                 objNavAcc.style.color = "white";
             }
-        }else if(screen.width <= 375 && screen.width >= 321){
+        }else if(screen.width <= 375){
             if (memoPositionNavAcc - posCurseur > -800) {
                 objNavAcc.addEventListener("mouseenter", (event) => {
                     event.target.style.color = "#ffc551";
@@ -226,6 +226,24 @@
             }
         }else if( screen.width <= 375 && screen.width >= 321){
             if (memoPositionNavApro - posCurseur < -800 && memoPositionNavApro - posCurseur > -2200){
+                objNavApro.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavApro.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "#ffb727";
+                });
+                objNavApro.style.color = "#ffb727";
+            } else {
+                objNavApro.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavApro.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "white";
+                });
+                objNavApro.style.color = "white";
+            }
+        }else if( screen.width <= 320){
+            if (memoPositionNavApro - posCurseur < -800 && memoPositionNavApro - posCurseur > -2000){
                 objNavApro.addEventListener("mouseenter", (event) => {
                     event.target.style.color = "#ffc551";
                 });
@@ -363,6 +381,24 @@
                 });
                 objNavExp.style.color = "white";
             }
+        }else if(screen.width <= 320){
+            if (memoPositionNavExp - posCurseur < -2000 && memoPositionNavExp - posCurseur > -3000) {
+                objNavExp.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavExp.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "#ffb727";
+                });
+                objNavExp.style.color = "#ffb727";
+            } else {
+                objNavExp.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavExp.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "white";
+                });
+                objNavExp.style.color = "white";
+            }
         }
     }
 
@@ -484,6 +520,24 @@
                 });
                 objNavProj.style.color = "white";
             }
+        }else if(screen.width <= 320){
+            if (memoPositionNavProj - posCurseur < -3000 && memoPositionNavProj - posCurseur > -4100) {
+                objNavProj.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavProj.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "#ffb727";
+                });
+                objNavProj.style.color = "#ffb727";
+            } else {
+                objNavProj.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavProj.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "white";
+                });
+                objNavProj.style.color = "white";
+            }
         }
     }
 
@@ -589,6 +643,24 @@
             }
         }else if(screen.width <= 375 && screen.width >= 321){
             if (memoPositionNavCont - posCurseur < -4500) {
+                objNavCont.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavCont.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "#ffb727";
+                });
+                objNavCont.style.color = "#ffb727";
+            } else {
+                objNavCont.addEventListener("mouseenter", (event) => {
+                    event.target.style.color = "#ffc551";
+                });
+                objNavCont.addEventListener("mouseout", (event) => {
+                    event.target.style.color = "white";
+                });
+                objNavCont.style.color = "white";
+            }
+        }else if(screen.width <= 320){
+            if (memoPositionNavCont - posCurseur < -4100) {
                 objNavCont.addEventListener("mouseenter", (event) => {
                     event.target.style.color = "#ffc551";
                 });

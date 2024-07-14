@@ -281,7 +281,7 @@
     }
 
     #ImgDeProfil {
-        height: 600px;
+        height: 635px;
     }
     .imgbox{
         margin-right: 3%;
@@ -307,6 +307,7 @@
 
     #coordoner p {
         margin-top: 0;
+        margin-bottom: 0.3rem;
     }
 
     #coordoner strong {
@@ -314,7 +315,7 @@
     }
 
     #description {
-        font-size: var(--fontSize-16px);
+        font-size: var(--fontSize-15px);
         line-height: 1.4rem;
     }
 
@@ -405,17 +406,17 @@
 
     #CarreGris {
         background-color: var(--boxGris-color);
-        padding: 0.4rem;
+        padding: 0.5rem;
         text-align: center;
         margin-left: 0;
         margin-top: 15px;
         margin-bottom: 5px;
         font-size: var(--fontSize-15px);
-        max-width: 90px;
+        max-width: fit-content;
     }
 
     #separation2 {
-        height: 180px;
+        height: auto;
         width: 2px;
         margin-left: 0.5rem;
         margin-top: 5px;
@@ -801,7 +802,7 @@
     }
     /* A PROPOS */
     #ImgDeProfil{
-        height: 850px;
+        height: 900px;
     }
     #description{
         font-size: 1.7rem;
@@ -1004,9 +1005,6 @@
         width: auto;
         margin-bottom: 5%;
     }
-    .copyright{
-        font-size: 0.8rem;
-    }
 }
 
 /* TABLETTE */
@@ -1029,16 +1027,16 @@
 /* Laptop large */
 @media only screen and (min-width: 1025px) and (max-width: 1440px){
     #ImgDeProfil{
-        height: 550px;
+        height: 700px;
     }
     .imgbox{
         margin-right: 2%;
     }
     #description p{
-        margin-top: 0;
+        margin-top: 0.2rem;
     }
     #coordoner p{
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.3rem;
     }
 }
 
@@ -1062,6 +1060,10 @@
         justify-content: center;
         margin-right: 0;
         margin-bottom: 3%;
+    }
+    .CoordoneLaptop{
+        display: flex;
+        justify-content: space-around;
     }
     /* Experiences */
     #MesExperiences ul, #listeDiplome{
@@ -1099,7 +1101,7 @@
     }
     /* CONTACT */
     #BlockContact p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -1175,8 +1177,8 @@
         height: 400px;
     }
     #EmailTxt{
-        font-size: 0.8rem;
-        margin-top: 5px;
+        font-size: 1rem;
+        margin-top:2px;
     }
     #description{
         font-size: 0.9rem;
@@ -1199,6 +1201,9 @@
     }
     /* CONTACT */
     /* FOOTER */
+    .copyright{
+        font-size: 0.9rem;
+    }
 }
 
 /* Mobile classique */
@@ -1218,8 +1223,8 @@
         height: 350px;
     }
     #EmailTxt{
-        font-size: 0.7rem;
-        margin-top: 5px;
+        font-size: 0.9rem;
+        margin-top: 4px;
     }
     #description{
         font-size: 0.9rem;
@@ -1255,10 +1260,28 @@
         min-height: 40px;
     }
     /* FOOTER */
+    .copyright{
+        font-size: 0.8rem;
+    }
 }
 
 /* Mobile slim */
 @media only screen and (max-width: 320px){
+    #BurgerMenu {
+        width: 30px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 86%;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        z-index: 10000;
+        padding-left: 3px;
+        padding-right: 6px;
+        padding-bottom: 3px;
+    }
     #MesTitles span{
         font-size: 1.7rem;
     }
@@ -1283,12 +1306,12 @@
         margin-bottom: 1%;
     }
     #TitleCoord{
-        font-size: 0.7rem;
-        margin-top: 4px;
+        font-size: 0.8rem;
+        margin-top: 3px;
     }
     #EmailTxt{
-        font-size: 0.6rem;
-        margin-top: 6px;
+        font-size: 0.8rem;
+        margin-top: 3px;
     }
     #description{
         font-size: 0.8rem;
@@ -1334,4 +1357,13 @@
         font-size: 0.8rem;
     }
     /* FOOTER */
+    #scroll_to_top img, #scroll_to_bottom {
+        width: 45px;
+    }
+    #scroll_to_top {
+        right: 20px;
+    }
+    .copyright{
+        font-size: 0.7rem;
+    }
 }
